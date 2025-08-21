@@ -1,0 +1,99 @@
+:root {
+  --md-primary-fg-color: #1a1a1a;
+  --md-accent-fg-color: #1a1a1a;
+}
+
+/* general setting */
+.md-header__title .md-ellipsis {
+  font-weight: 900 !important;
+}
+
+.md-header__button.md-logo img {
+  height: 2rem !important;
+}
+
+figcaption {
+  font-style: normal !important;
+}
+
+form.quiz {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+form.quiz label {
+  display: block;
+  margin: 0.4em 0;
+  cursor: pointer;
+}
+
+.quiz-feedback {
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.correct {
+  color: #155724;
+  background: #d4edda;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+}
+
+.wrong {
+  color: #721c24;
+  background: #f8d7da;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+}
+
+/* light mode setting */
+.md-header__button.md-logo img {
+  content: url('../assets/images/logo-dark.svg');
+}
+[data-md-color-scheme="default"] .md-header {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(6px);
+  box-shadow: none;
+}
+[data-md-color-scheme="default"] .md-typeset h1 {
+  color: #333333 !important;
+  font-weight: 550 !important;
+}
+[data-md-color-scheme="default"] .md-nav__link--active {
+  color: #144b66 !important;
+}
+
+[data-md-color-scheme="default"] .md-nav__link:hover {
+  color: #144b66 !important;
+}
+
+/* dark mode setting */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #22272e;
+  --md-default-bg-color: #22272e;
+  --md-header-bg-color: #22272e;
+  --md-footer-bg-color: #22272e;
+}
+[data-md-color-scheme="slate"] .md-header__title {
+  color: #bfc1c7 !important;
+}
+[data-md-color-scheme="slate"] .md-header {
+  background-color: rgba(34, 39, 46, 0.85) !important;
+  backdrop-filter: blur(6px);
+  box-shadow: none;
+}
+[data-md-color-scheme="slate"] .md-header__button.md-logo img {
+  content: url('../assets/images/logo-light.svg');
+}
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #bfc1c7 !important;
+  font-weight: 900 !important;
+}
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #bfc1c7 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: #bfc1c7 !important;
+}

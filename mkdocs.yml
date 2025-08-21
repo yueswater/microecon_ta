@@ -1,0 +1,82 @@
+site_name: 排版研究室
+site_dir: site
+repo_url: https://github.com/yueswater/microecon_ta
+repo_name: xiaolong70701/latex-lab
+
+nav:
+  - 第 0 章 &nbsp; 基本語法: 
+    - chapter_latex_basic/index.md
+    - 0.1 &nbsp; 指令與註解: chapter_latex_basic/use_command.md
+    - 0.2 &nbsp; 環境: chapter_latex_basic/use_environment.md
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: white
+      accent: light blue
+      toggle:
+          icon: material/weather-night
+          name: 切換深色模式
+    - scheme: slate
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切換淺色模式
+  font:
+    text: Noto Sans TC
+    code: Fira Code
+  features:
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - content.footnote.tooltips
+  logo: assets/images/logo-light.svg
+  favicon: assets/images/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
+extra:
+  alternate:
+    - name: 繁體中文
+      link: /
+      lang: zh-Hant
+    - name: English
+      link: /en/
+      lang: en
+extra_javascript:
+  - js/quiz.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - styles.css
+  - stylesheets/extra.css
+markdown_extensions:
+  - footnotes
+  - admonition
+  - codehilite
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+plugins:
+  - caption:
+      figure:
+        caption_prefix: "圖 {index}："
+  - glightbox
+  - search:
+      enabled: true
+      lang: zh
+
