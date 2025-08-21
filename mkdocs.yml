@@ -1,13 +1,16 @@
-site_name: 排版研究室
+site_name: 個體經濟學
 site_dir: site
 repo_url: https://github.com/yueswater/microecon_ta
-repo_name: xiaolong70701/latex-lab
+repo_name: yueswater/microecon_ta
 
 nav:
-  - 第 0 章 &nbsp; 基本語法: 
-    - chapter_latex_basic/index.md
-    - 0.1 &nbsp; 指令與註解: chapter_latex_basic/use_command.md
-    - 0.2 &nbsp; 環境: chapter_latex_basic/use_environment.md
+  - 第 0 章 &nbsp; 個體經濟學數學基礎: 
+    - ch0/index.md
+    - 0.1 &nbsp; 微積分: ch0/calculus.md
+  - 第 1 章 &nbsp; 需求與供給: 
+    - ch1/index.md
+    - 1.1 &nbsp; 需求: ch1/demand.md
+    - 1.2 &nbsp; 供給: ch1/supply.md
 theme:
   name: material
   palette:
@@ -37,8 +40,6 @@ theme:
     - content.tabs.link
     - content.tooltips
     - content.footnote.tooltips
-  logo: assets/images/logo-light.svg
-  favicon: assets/images/favicon.svg
   icon:
     repo: fontawesome/brands/github
 extra:

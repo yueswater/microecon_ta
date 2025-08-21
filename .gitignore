@@ -1,2 +1,13 @@
-deploy.sh
+# ==== Build / Deploy ====
 site/
+deploy.sh
+
+# ==== Notes ====
+# 忽略 notes/ 底下的所有檔案，但保留目錄結構
+notes/**/*
+
+# 保留所有 PDF 檔案
+!notes/**/*.pdf
+
+# 確保目錄不被忽略（這樣才能掃描到裡面的 PDF）
+!notes/*/
