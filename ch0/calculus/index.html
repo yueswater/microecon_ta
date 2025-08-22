@@ -661,6 +661,8 @@
       
         
       
+        
+      
     
     
     
@@ -732,6 +734,27 @@
   
   <span class="md-ellipsis">
     1.2 &nbsp; 供給
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch1/market/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 &nbsp; 均衡分析
   </span>
   
 
@@ -1064,13 +1087,15 @@
 <li>若還要可微，再檢查差商極限是否存在</li>
 </ol>
 </div>
-<p>??? example "範例：分段函數的連續與可微"
-    設 <span class="arithmatex">\(f(x)=\begin{cases}
-    x^2-1,&amp; x&lt;1\\
-    2x-2,&amp; x\ge 1
-    \end{cases}\)</span>。<br>
-    - 連續性：<span class="arithmatex">\(\lim_{x\to 1^-}f(x)=0\)</span>、<span class="arithmatex">\(\lim_{x\to 1^+}f(x)=0\)</span>，且 <span class="arithmatex">\(f(1)=0\)</span>，故在 <span class="arithmatex">\(x=1\)</span> 連續。<br>
-    - 可微性：左導數 <span class="arithmatex">\(f'_-(1)=2x|_{x=1}=2\)</span>，右導數 <span class="arithmatex">\(f'_+(1)=2\)</span>，相等，故在 <span class="arithmatex">\(x=1\)</span> 可微。</p>
+<details class="example">
+<summary>範例：分段函數的連續與可微</summary>
+<p>設 <span class="arithmatex">\(f(x)=\begin{cases}
+x^2-1,&amp; x&lt;1\\
+2x-2,&amp; x\ge 1
+\end{cases}\)</span>。<br>
+- 連續性：<span class="arithmatex">\(\lim_{x\to 1^-}f(x)=0\)</span>、<span class="arithmatex">\(\lim_{x\to 1^+}f(x)=0\)</span>，且 <span class="arithmatex">\(f(1)=0\)</span>，故在 <span class="arithmatex">\(x=1\)</span> 連續。<br>
+- 可微性：左導數 <span class="arithmatex">\(f'_-(1)=2x|_{x=1}=2\)</span>，右導數 <span class="arithmatex">\(f'_+(1)=2\)</span>，相等，故在 <span class="arithmatex">\(x=1\)</span> 可微。</p>
+</details>
 <hr>
 <h3 id="2">2. 單變數微分與最適化</h3>
 <h4 id="21">2.1 導數與二階導數</h4>
@@ -1090,11 +1115,13 @@
   \end{cases}
   $$</li>
 </ul>
-<p>???+ example "範例：多項式的極值"
-    設 <span class="arithmatex">\(f(x)=ax-bx^2-cx^3\)</span>，<span class="arithmatex">\(a,b,c&gt;0\)</span>。<br>
-    - <span class="arithmatex">\(f'(x)=a-2bx-3cx^2\)</span>，解 <span class="arithmatex">\(f'(x)=0\)</span> 得候選點。<br>
-    - <span class="arithmatex">\(f''(x)=-2b-6cx&lt;0\)</span> 對所有 <span class="arithmatex">\(x\ge 0\)</span>，故在非負域的臨界點為局部極大。<br>
-    - 若限制 <span class="arithmatex">\(x\ge 0\)</span>，需同時比對邊界 <span class="arithmatex">\(x=0\)</span> 的函數值。</p>
+<details class="example" open="open">
+<summary>範例：多項式的極值</summary>
+<p>設 <span class="arithmatex">\(f(x)=ax-bx^2-cx^3\)</span>，<span class="arithmatex">\(a,b,c&gt;0\)</span>。<br>
+- <span class="arithmatex">\(f'(x)=a-2bx-3cx^2\)</span>，解 <span class="arithmatex">\(f'(x)=0\)</span> 得候選點。<br>
+- <span class="arithmatex">\(f''(x)=-2b-6cx&lt;0\)</span> 對所有 <span class="arithmatex">\(x\ge 0\)</span>，故在非負域的臨界點為局部極大。<br>
+- 若限制 <span class="arithmatex">\(x\ge 0\)</span>，需同時比對邊界 <span class="arithmatex">\(x=0\)</span> 的函數值。</p>
+</details>
 <div class="admonition warning">
 <p class="admonition-title">常見錯誤</p>
 <ul>
@@ -1126,16 +1153,18 @@
   $$
   是向量值函數的一階導數矩陣。</li>
 </ul>
-<p>??? example "範例：Cobb–Douglas 的梯度與全微分"
-    設 <span class="arithmatex">\(f(x,y)=x^\alpha y^{1-\alpha}\)</span>，<span class="arithmatex">\(0&lt;\alpha&lt;1\)</span>。<br>
-    $$
-    f_x=\alpha x^{\alpha-1}y^{1-\alpha},\quad
-    f_y=(1-\alpha)x^\alpha y^{-\,( \alpha )}
-    $$
-    在 <span class="arithmatex">\((x_0,y_0)\)</span> 的全微分：
-    $$
-    df\approx \alpha x_0^{\alpha-1}y_0^{1-\alpha}\,dx+(1-\alpha)x_0^\alpha y_0^{-\alpha}\,dy
-    $$</p>
+<details class="example">
+<summary>範例：Cobb–Douglas 的梯度與全微分</summary>
+<p>設 <span class="arithmatex">\(f(x,y)=x^\alpha y^{1-\alpha}\)</span>，<span class="arithmatex">\(0&lt;\alpha&lt;1\)</span>。<br>
+$$
+f_x=\alpha x^{\alpha-1}y^{1-\alpha},\quad
+f_y=(1-\alpha)x^\alpha y^{-\,( \alpha )}
+$$
+在 <span class="arithmatex">\((x_0,y_0)\)</span> 的全微分：
+$$
+df\approx \alpha x_0^{\alpha-1}y_0^{1-\alpha}\,dx+(1-\alpha)x_0^\alpha y_0^{-\alpha}\,dy
+$$</p>
+</details>
 <hr>
 <h3 id="4-ift">4. 鏈鎖律與隱函數定理（IFT）</h3>
 <h4 id="41-chain-rule">4.1 鏈鎖律（Chain Rule）</h4>
@@ -1158,12 +1187,14 @@ $$</p>
 <li>多維版本可用 Jacobian 與逆函數定理處理</li>
 </ul>
 </div>
-<p>??? example "範例：隱函數的導數"
-    設 <span class="arithmatex">\(F(x,y)=x^2+y^2-1=0\)</span>，圓上的 <span class="arithmatex">\(y=y(x)\)</span>。<br>
+<details class="example">
+<summary>範例：隱函數的導數</summary>
+<p>設 <span class="arithmatex">\(F(x,y)=x^2+y^2-1=0\)</span>，圓上的 <span class="arithmatex">\(y=y(x)\)</span>。<br>
 <span class="arithmatex">\(F_x=2x,\;F_y=2y\)</span>，若 <span class="arithmatex">\(y\ne 0\)</span>，則
-    $$
-    \frac{dy}{dx}=-\frac{F_x}{F_y}=-\frac{x}{y}.
-    $$</p>
+$$
+\frac{dy}{dx}=-\frac{F_x}{F_y}=-\frac{x}{y}.
+$$</p>
+</details>
 <hr>
 <h3 id="5-hessian">5. Hessian 與凹凸性判別（多變數）</h3>
 <h4 id="51-hessian">5.1 Hessian 定義</h4>
@@ -1196,20 +1227,22 @@ $$</p>
   \end{cases}
   $$</li>
 </ul>
-<p>???+ example "範例：<span class="arithmatex">\(f(x,y)=\ln x+\ln y\)</span> 的凹性"
-    $$
-    f_x=\frac{1}{x},\quad f_y=\frac{1}{y},\quad
-    f_{xx}=-\frac{1}{x^2},\quad f_{yy}=-\frac{1}{y^2},\quad f_{xy}=0.
-    $$
-    $$
-    H=
-    \begin{bmatrix}
-    -x^{-2} &amp; 0\
-    0 &amp; -y^{-2}
-    \end{bmatrix},
-    \quad a=-x^{-2}&lt;0,\ \det(H)=x^{-2}y^{-2}&gt;0
-    $$
-    故 <span class="arithmatex">\(H\prec 0\)</span>，<span class="arithmatex">\(f\)</span> 嚴凹。</p>
+<details class="example" open="open">
+<summary>範例：<span class="arithmatex">\(f(x,y)=\ln x+\ln y\)</span> 的凹性</summary>
+<p>$$
+f_x=\frac{1}{x},\quad f_y=\frac{1}{y},\quad
+f_{xx}=-\frac{1}{x^2},\quad f_{yy}=-\frac{1}{y^2},\quad f_{xy}=0.
+$$
+$$
+H=
+\begin{bmatrix}
+-x^{-2} &amp; 0\
+0 &amp; -y^{-2}
+\end{bmatrix},
+\quad a=-x^{-2}&lt;0,\ \det(H)=x^{-2}y^{-2}&gt;0
+$$
+故 <span class="arithmatex">\(H\prec 0\)</span>，<span class="arithmatex">\(f\)</span> 嚴凹。</p>
+</details>
 <hr>
 <h3 id="6">6. 多變數最適化：一階與二階條件（無約束）</h3>
 <ul>
@@ -1223,12 +1256,14 @@ $$</p>
   \end{cases}
   $$</li>
 </ul>
-<p>??? example "範例：二次型的極值"
-    設 <span class="arithmatex">\(f(\mathbf{x})=-\tfrac12\,\mathbf{x}^\top Q\,\mathbf{x}+\mathbf{b}^\top\mathbf{x}\)</span>，若 <span class="arithmatex">\(Q\succ 0\)</span>，<br>
-    則 <span class="arithmatex">\(H=-Q\prec 0\)</span>，<span class="arithmatex">\(f\)</span> 嚴凹且唯一極大點由 <span class="arithmatex">\(\nabla f=0\)</span> 得
-    $$
-    -Q\mathbf{x}^*+\mathbf{b}=0\ \Rightarrow\ \mathbf{x}^*=Q^{-1}\mathbf{b}.
-    $$</p>
+<details class="example">
+<summary>範例：二次型的極值</summary>
+<p>設 <span class="arithmatex">\(f(\mathbf{x})=-\tfrac12\,\mathbf{x}^\top Q\,\mathbf{x}+\mathbf{b}^\top\mathbf{x}\)</span>，若 <span class="arithmatex">\(Q\succ 0\)</span>，<br>
+則 <span class="arithmatex">\(H=-Q\prec 0\)</span>，<span class="arithmatex">\(f\)</span> 嚴凹且唯一極大點由 <span class="arithmatex">\(\nabla f=0\)</span> 得
+$$
+-Q\mathbf{x}^*+\mathbf{b}=0\ \Rightarrow\ \mathbf{x}^*=Q^{-1}\mathbf{b}.
+$$</p>
+</details>
 <hr>
 <h3 id="7">7. 泰勒展開與局部近似</h3>
 <h4 id="71">7.1 單變數</h4>
@@ -1261,24 +1296,26 @@ $$
 \nabla_{\mathbf{x}}\mathcal{L}=\mathbf{0},\qquad \frac{\partial\mathcal{L}}{\partial\lambda}=c-g(\mathbf{x})=0.
 $$
 經典經驗法則：在內部解，常可得到 <strong>等邊際條件</strong>（如「每單位資源的邊際貢獻相等」）。</p>
-<p>???+ example "範例：等產量曲線上的成本最小化（簡版）"
-    設成本 <span class="arithmatex">\(C=wL+rK\)</span>，產出約束 <span class="arithmatex">\(F(L,K)=\bar{Q}\)</span>。<br>
-    $$
-    \mathcal{L}=wL+rK+\lambda\,(\bar{Q}-F(L,K)).
-    $$
-    FOC：
-    $$
-    \begin{aligned}
-    &amp;\frac{\partial\mathcal{L}}{\partial L}=w-\lambda F_L=0,\quad
-    \frac{\partial\mathcal{L}}{\partial K}=r-\lambda F_K=0,\
-    &amp;\frac{\partial\mathcal{L}}{\partial\lambda}=\bar{Q}-F(L,K)=0.
-    \end{aligned}
-    $$
-    消去 <span class="arithmatex">\(\lambda\)</span> 得 <strong>等邊際條件</strong>：
-    $$
-    \frac{F_L}{F_K}=\frac{w}{r}.
-    $$
-    二階條件需檢查拉格朗日之 <strong>bordered Hessian</strong>（完整細節與 KKT 放在下一小節）。</p>
+<details class="example" open="open">
+<summary>範例：等產量曲線上的成本最小化（簡版）</summary>
+<p>設成本 <span class="arithmatex">\(C=wL+rK\)</span>，產出約束 <span class="arithmatex">\(F(L,K)=\bar{Q}\)</span>。<br>
+$$
+\mathcal{L}=wL+rK+\lambda\,(\bar{Q}-F(L,K)).
+$$
+FOC：
+$$
+\begin{aligned}
+&amp;\frac{\partial\mathcal{L}}{\partial L}=w-\lambda F_L=0,\quad
+\frac{\partial\mathcal{L}}{\partial K}=r-\lambda F_K=0,\
+&amp;\frac{\partial\mathcal{L}}{\partial\lambda}=\bar{Q}-F(L,K)=0.
+\end{aligned}
+$$
+消去 <span class="arithmatex">\(\lambda\)</span> 得 <strong>等邊際條件</strong>：
+$$
+\frac{F_L}{F_K}=\frac{w}{r}.
+$$
+二階條件需檢查拉格朗日之 <strong>bordered Hessian</strong>（完整細節與 KKT 放在下一小節）。</p>
+</details>
 <hr>
 <h3 id="9">9. 實作流程圖（無約束 → 受限）</h3>
 <div class="admonition info">
