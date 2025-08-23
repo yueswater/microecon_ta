@@ -61,11 +61,11 @@ form.quiz label {
   font-weight: 550 !important;
 }
 [data-md-color-scheme="default"] .md-nav__link--active {
-  color: #144b66 !important;
+  color: #349890 !important;
 }
 
 [data-md-color-scheme="default"] .md-nav__link:hover {
-  color: #144b66 !important;
+  color: #349890 !important;
 }
 
 /* dark mode setting */
