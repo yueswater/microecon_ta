@@ -300,6 +300,24 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -345,11 +363,200 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch0/calculus/" class="md-nav__link">
+      <a href="../../ch0/function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    0.1 &nbsp; 微積分
+    0.1 &nbsp; 函數
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/limit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.2 &nbsp; 極限與連續性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.3 &nbsp; 微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.4 &nbsp; 積分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/partial_diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.5 &nbsp; 偏微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/total_diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.6 &nbsp; 全微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/taylor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.7 &nbsp; 泰勒級數與泰勒展開
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/simul_eqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.8 &nbsp; 聯立方程式的求解
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.9 &nbsp; 最適化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/pv_fv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.10 &nbsp; 現值與未來值
   </span>
   
 
@@ -926,15 +1133,15 @@
 <p>如果描述需求的方法並非離散而是連續，則繪製的需求曲線是一個平滑的曲線。</p>
 <p><figure id="_figure-2"><a class="glightbox" href="../images/dc2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="需求曲線 (連續)" src="../images/dc2.png" width="350"></a><figcaption>圖 2： 需求曲線 (連續)</figcaption></figure></p>
 <p>一般而言，大部分的商品或是勞務，在其他條件不變之下，當價格高時需求量較低，價格低時需求量較高，此現象稱為<strong>需求法則</strong> (the law of demand)。需求曲線表達特定價格下，消費者願意且能夠購買的最大需求量，更進一步描述特定需求量下消費者願意支付的</p>
-<details class="note">
-<summary>需求法則</summary>
+<div class="admonition note">
+<p class="admonition-title">需求法則</p>
 <p>在其他條件不變的情況下，消費者對某一特定商品的需求量與價格呈現反向變動的情形。<br>
 若給定需求函數為 <span class="arithmatex">\(Q_d = Q_d(p)\)</span>，其中 <span class="arithmatex">\(p\)</span> 為商品自身價格，<span class="arithmatex">\(Q_d\)</span> 為需求量，則滿足需求法則的條件為：
 $$
 \dfrac{d Q_{d}}{dp} &lt; 0
 $$
 這代表當價格上升時，需求量會下降；反之，價格下降時，需求量會增加。<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
-</details>
+</div>
 <h3 id="_4">需求函數</h3>
 <p>描述特定商品價量關係除了用圖表外，另一個最常見的方式是使用數學函數，稱為<strong>需求函數</strong> (demand function)。一般來說，需求函數可表達為顯函數 (explicit function) 與隱函數 (implicit function) 的形式。如描述產品 <span class="arithmatex">\(X\)</span> 的需求價量關係，隱函數表達方式為：
 $$
@@ -1160,8 +1367,8 @@ $$</p>
 <div class="arithmatex">\[
 CS = \int_{0}^{Q^*} p(Q) \, dQ - p^* \times Q^*
 \]</div>
-<details class="note">
-<summary>線性需求函數消費者剩餘</summary>
+<div class="admonition note">
+<p class="admonition-title">線性需求函數消費者剩餘</p>
 <p>考慮最常見的線性需求函數 <span class="arithmatex">\(p = a - bQ\)</span>，其中 <span class="arithmatex">\(a &gt; 0\)</span>, <span class="arithmatex">\(b &gt; 0\)</span>。在市場價格 <span class="arithmatex">\(p^*\)</span> 下，均衡數量為 <span class="arithmatex">\(Q^* = \frac{a - p^*}{b}\)</span>。</p>
 <p>消費者剩餘的計算如下：</p>
 <div class="arithmatex">\[
@@ -1177,7 +1384,7 @@ CS &amp;= \int_{0}^{Q^*} (a - bQ) \, dQ - p^* \times Q^* \\
 CS = \frac{(a - p^*)^2}{2b}
 \]</div>
 <p>上述結果可得知，線性需求曲線下的消費者剩餘呈現三角形面積，底邊為均衡數量 <span class="arithmatex">\(Q^*\)</span>，高為最高保留價格與市場價格的差額 <span class="arithmatex">\((a - p^*)\)</span>。</p>
-</details>
+</div>
 <div class="footnote">
 <hr>
 <ol>
@@ -1223,6 +1430,46 @@ document$.subscribe(() => { lightbox.reload() });
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: 需求與供給">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                需求與供給
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../supply/" class="md-footer__link md-footer__link--next" aria-label="Next: 1.2 &amp;nbsp; 供給">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                1.2 &nbsp; 供給
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -1245,7 +1492,7 @@ document$.subscribe(() => { lightbox.reload() });
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>

@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../ch0/pv_fv/">
+        <link rel="prev" href="../function/">
       
       
-        <link rel="next" href="demand/">
+        <link rel="next" href="../diff/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.21">
     
     
       
-        <title>需求與供給 - 個體經濟學</title>
+        <title>0.2   極限與連續性 - 個體經濟學</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,18 +46,18 @@
       
     
     
-      <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="../../styles.css">
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -66,7 +66,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -101,7 +101,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="個體經濟學" class="md-header__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+    <a href="../.." title="個體經濟學" class="md-header__button md-logo" aria-label="個體經濟學" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              需求與供給
+              0.2 &nbsp; 極限與連續性
             
           </span>
         </div>
@@ -262,7 +262,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="個體經濟學" class="md-nav__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+    <a href="../.." title="個體經濟學" class="md-nav__button md-logo" aria-label="個體經濟學" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -289,6 +289,8 @@
       
   
   
+    
+  
   
   
     
@@ -321,16 +323,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ch0/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -347,7 +349,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             第 0 章 &nbsp; 個體經濟學數學基礎
@@ -363,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/function/" class="md-nav__link">
+      <a href="../function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -381,10 +383,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ch0/limit/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    0.2 &nbsp; 極限與連續性
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -393,6 +415,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      極限的基本概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="極限的基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      經濟學中的極限應用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="經濟學中的極限應用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      邊際概念
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ces" class="md-nav__link">
+    <span class="md-ellipsis">
+      CES 函數與特殊情況
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CES 函數與特殊情況">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ces_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      CES 函數的一般形式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      極限推導特殊情況
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="極限推導特殊情況">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      完全替代
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobb-douglas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cobb-Douglas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      完全互補
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -405,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/diff/" class="md-nav__link">
+      <a href="../diff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/integration/" class="md-nav__link">
+      <a href="../integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -447,7 +594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/partial_diff/" class="md-nav__link">
+      <a href="../partial_diff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -468,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/total_diff/" class="md-nav__link">
+      <a href="../total_diff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -489,7 +636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/taylor/" class="md-nav__link">
+      <a href="../taylor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/simul_eqs/" class="md-nav__link">
+      <a href="../simul_eqs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -531,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/optimization/" class="md-nav__link">
+      <a href="../optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -552,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/pv_fv/" class="md-nav__link">
+      <a href="../pv_fv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -577,8 +724,6 @@
       
   
   
-    
-  
   
   
     
@@ -597,16 +742,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../ch1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -617,13 +762,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             第 1 章 &nbsp; 需求與供給
@@ -639,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="demand/" class="md-nav__link">
+      <a href="../../ch1/demand/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="supply/" class="md-nav__link">
+      <a href="../../ch1/supply/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="market/" class="md-nav__link">
+      <a href="../../ch1/market/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -731,9 +876,105 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      本章目錄
+      極限的基本概念
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="極限的基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      經濟學中的極限應用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="經濟學中的極限應用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      邊際概念
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ces" class="md-nav__link">
+    <span class="md-ellipsis">
+      CES 函數與特殊情況
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CES 函數與特殊情況">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ces_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      CES 函數的一般形式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      極限推導特殊情況
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="極限推導特殊情況">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      完全替代
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobb-douglas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cobb-Douglas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      完全互補
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -755,23 +996,105 @@
   
 
 
-<html><body><h1 id="_1">需求與供給</h1>
-<figure class="chapter-hero">
-  <a class="glightbox" href="../assets/images/ch1-cover.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../assets/images/ch1-cover.png" alt="連日豪雨菜價漲，高麗菜漲三成五" loading="lazy"></a>
-  <figcaption>
-    圖片來源：
-    <a href="https://money.udn.com/money/story/122328/8914841" target="_blank" rel="noopener">
-      聯合報｜連日豪雨菜價漲 高麗菜漲三成五
-    </a>
-  </figcaption>
-</figure>
-
-<h2 id="_2">本章目錄</h2>
+<html><body><h1 id="_1">極限與連續性</h1>
+<p>當你在網路購物平台比較不同商品的價格時，是否注意到某些商品之間似乎存在著完美的替代關係，而另一些商品則必須搭配使用才有意義？比如說，對大多數消費者而言，可口可樂和百事可樂幾乎可以完全互相替代——當其中一種漲價時，消費者很容易轉向另一種，這種近乎完美的替代關係在數學上可以用特殊的函數形式來描述。相反地，左腳鞋和右腳鞋、汽車和汽油、電腦和軟體等商品組合，則展現出強烈的互補特性——缺少其中任何一樣，另一樣的價值就會大打折扣。</p>
+<p>這些看似簡單的日常觀察，在數學上涉及函數在極限情況下的行為特性。透過研究函數在參數趨向特定數值時的極限行為，我們可以理解從一般性的替代彈性函數，如何推導出完全替代和完全互補這兩種極端但重要的特殊情況。</p>
+<h2 id="_2">極限的基本概念</h2>
+<p><strong>極限</strong> (limit) 是微積分的核心概念，描述函數在某點附近的行為趨勢。在經濟學中，極限概念幫助我們理解經濟變數在極端情況下的表現。</p>
+<div class="admonition note">
+<p class="admonition-title">函數極限</p>
+<p>設函數 <span class="arithmatex">\(f(x)\)</span> 在點 <span class="arithmatex">\(a\)</span> 的某個去心鄰域內有定義，若存在實數 <span class="arithmatex">\(L\)</span>，使得對任意 <span class="arithmatex">\(\varepsilon &gt; 0\)</span>，存在 <span class="arithmatex">\(\delta &gt; 0\)</span>，當 <span class="arithmatex">\(0 &lt; |x - a| &lt; \delta\)</span> 時，有 <span class="arithmatex">\(|f(x) - L| &lt; \varepsilon\)</span>，則稱：
+$$
+\lim_{x \to a} f(x) = L
+$$</p>
+</div>
+<h3 id="_3">經濟學中的極限應用</h3>
+<h4 id="_4">邊際概念</h4>
+<p>經濟學中的<strong>邊際</strong> (marginal) 概念本質上就是極限：</p>
+<p><strong>邊際效用</strong>：
+$$
+MU = \lim_{\Delta x \to 0} \frac{\Delta U}{\Delta x} = \frac{dU}{dx}
+$$</p>
+<p><strong>邊際成本</strong>：
+$$
+MC = \lim_{\Delta Q \to 0} \frac{\Delta C}{\Delta Q} = \frac{dC}{dQ}
+$$</p>
+<p><strong>邊際產品</strong>：
+$$
+MP_L = \lim_{\Delta L \to 0} \frac{\Delta Q}{\Delta L} = \frac{\partial Q}{\partial L}
+$$</p>
+<h2 id="ces">CES 函數與特殊情況</h2>
+<p><strong>常替代彈性</strong> (Constant Elasticity of Substitution, CES) 函數是經濟學中描述生產技術和消費偏好的重要工具。</p>
+<h3 id="ces_1">CES 函數的一般形式</h3>
+<p>CES 函數的標準形式為：
+$$
+f(x_1, x_2. = A[ax_1^{-\rho} + (1-a)x_2^{-\rho}]^{-\frac{1}{\rho}}
+$$</p>
+<p>其中：</p>
 <ul>
-<li><a href="demand/">需求</a></li>
-<li><a href="supply/">供給</a></li>
-<li><a href="market/">市場均衡</a></li>
-</ul><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+<li><span class="arithmatex">\(A &gt; 0\)</span>：效率參數</li>
+<li><span class="arithmatex">\(0 &lt; a &lt; 1\)</span>：分配參數</li>
+<li><span class="arithmatex">\(\rho &gt; -1\)</span>：替代參數</li>
+</ul>
+<p><strong>替代彈性</strong> (elasticity of substitution) 定義為：
+$$
+\sigma = \frac{1}{1 + \rho}
+$$</p>
+<h3 id="_5">極限推導特殊情況</h3>
+<p>CES 函數的強大之處在於，通過讓替代參數 <span class="arithmatex">\(\rho\)</span> 趨向不同的極限值，可以得到許多重要的特殊函數形式。</p>
+<h4 id="_6">完全替代</h4>
+<p>當 <span class="arithmatex">\(\rho \to -1\)</span> 時：
+$$
+\lim_{\rho \to -1} A[ax_1^{-\rho} + (1-a)x_2^{-\rho}]^{-\frac{1}{\rho}} = A[ax_1 + (1-a)x_2]
+$$</p>
+<p>這就是<strong>線性函數</strong>，表示兩種投入要素或消費品可以完全替代。</p>
+<p><strong>推導過程</strong>：
+$$
+\begin{aligned}
+&amp;\lim_{\rho \to -1} [ax_1^{-\rho} + (1-a)x_2^{-\rho}]^{-\frac{1}{\rho}} \
+&amp;= \lim_{\rho \to -1} [ax_1^{1+\rho} + (1-a)x_2^{1+\rho}]^{\frac{1}{1+\rho}} \
+&amp;= ax_1 + (1-a)x_2
+\end{aligned}
+$$</p>
+<h4 id="cobb-douglas">Cobb-Douglas</h4>
+<p>當 <span class="arithmatex">\(\rho \to 0\)</span> 時，需要使用 L'Hôpital 法則：
+$$
+\lim_{\rho \to 0} A[ax_1^{-\rho} + (1-a)x_2^{-\rho}]^{-\frac{1}{\rho}} = Ax_1^a x_2^{1-a}
+$$</p>
+<p>這就是著名的<strong>Cobb-Douglas 函數</strong>。</p>
+<p><strong>推導過程</strong>：
+令 <span class="arithmatex">\(g(\rho) = [ax_1^{-\rho} + (1-a)x_2^{-\rho}]^{-\frac{1}{\rho}}\)</span></p>
+<p>取對數：
+$$
+\ln g(\rho) = -\frac{1}{\rho} \ln[ax_1^{-\rho} + (1-a)x_2^{-\rho}]
+$$</p>
+<p>當 <span class="arithmatex">\(\rho \to 0\)</span> 時，分子分母皆趨向 0，使用洛必達法則：
+$$
+\lim_{\rho \to 0} \ln g(\rho) = a \ln x_1 + (1-a) \ln x_2 = \ln(x_1^a x_2^{1-a})
+$$</p>
+<p>因此：
+$$
+\lim_{\rho \to 0} g(\rho) = x_1^a x_2^{1-a}
+$$</p>
+<h4 id="_7">完全互補</h4>
+<p>當 <span class="arithmatex">\(\rho \to +\infty\)</span> 時：
+$$
+\lim_{\rho \to +\infty} A\,[ax_1^{-\rho} + (1-a)x_2^{-\rho}]^{-\tfrac{1}{\rho}}
+= A \min\big\lbrace \tfrac{x_1}{a}, \tfrac{x_2}{1-a}\big\rbrace
+$$</p>
+<p>這就是<strong>Leontief 函數</strong>或<strong>完全互補函數</strong>。</p>
+<div class="admonition note">
+<p class="admonition-title">CES 函數極限</p>
+<p>給定 CES 效用函數：
+$$
+U(x_1, x_2. = [0.6x_1^{-0.5} + 0.4x_2^{-0.5}]^{-2}
+$$</p>
+<ol>
+<li>計算替代彈性 <span class="arithmatex">\(\sigma\)</span></li>
+<li>說明此函數相對於 Cobb-Douglas 函數的替代特性</li>
+<li>若 <span class="arithmatex">\(x_1 = x_2 = 10\)</span>，計算效用值</li>
+</ol>
+</div><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body></html>
 
@@ -811,7 +1134,7 @@ document$.subscribe(() => { lightbox.reload() });
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../ch0/pv_fv/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 0.10 &amp;nbsp; 現值與未來值">
+          <a href="../function/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 0.1 &amp;nbsp; 函數">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -821,20 +1144,20 @@ document$.subscribe(() => { lightbox.reload() });
                 Previous
               </span>
               <div class="md-ellipsis">
-                0.10 &nbsp; 現值與未來值
+                0.1 &nbsp; 函數
               </div>
             </div>
           </a>
         
         
           
-          <a href="demand/" class="md-footer__link md-footer__link--next" aria-label="Next: 1.1 &amp;nbsp; 需求">
+          <a href="../diff/" class="md-footer__link md-footer__link--next" aria-label="Next: 0.3 &amp;nbsp; 微分">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1.1 &nbsp; 需求
+                0.3 &nbsp; 微分
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -868,12 +1191,12 @@ document$.subscribe(() => { lightbox.reload() });
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
-        <script src="../js/quiz.js"></script>
+        <script src="../../js/quiz.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       

@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../ch0/pv_fv/">
+        <link rel="prev" href="../partial_diff/">
       
       
-        <link rel="next" href="demand/">
+        <link rel="next" href="../taylor/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.21">
     
     
       
-        <title>需求與供給 - 個體經濟學</title>
+        <title>0.6   全微分 - 個體經濟學</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,18 +46,18 @@
       
     
     
-      <link rel="stylesheet" href="../styles.css">
+      <link rel="stylesheet" href="../../styles.css">
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -66,7 +66,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -101,7 +101,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="個體經濟學" class="md-header__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+    <a href="../.." title="個體經濟學" class="md-header__button md-logo" aria-label="個體經濟學" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              需求與供給
+              0.6 &nbsp; 全微分
             
           </span>
         </div>
@@ -262,7 +262,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="個體經濟學" class="md-nav__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+    <a href="../.." title="個體經濟學" class="md-nav__button md-logo" aria-label="個體經濟學" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -289,6 +289,8 @@
       
   
   
+    
+  
   
   
     
@@ -321,16 +323,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../ch0/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -347,7 +349,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             第 0 章 &nbsp; 個體經濟學數學基礎
@@ -363,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/function/" class="md-nav__link">
+      <a href="../function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -384,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/limit/" class="md-nav__link">
+      <a href="../limit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -405,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/diff/" class="md-nav__link">
+      <a href="../diff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -426,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/integration/" class="md-nav__link">
+      <a href="../integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -447,7 +449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/partial_diff/" class="md-nav__link">
+      <a href="../partial_diff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -465,10 +467,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ch0/total_diff/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    0.6 &nbsp; 全微分
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -477,6 +499,128 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      全微分的定義與矩陣表示
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="全微分的定義與矩陣表示">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      經濟詮釋：線性近似與邊際貢獻分解
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      對數微分與彈性分解
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      經濟學中的基本應用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composite-nested-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      多變數鏈式法則 (Composite / Nested Models)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      隱函數定理與比較靜態
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#envelope-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      包絡定理 (Envelope Theorem)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="包絡定理 (Envelope Theorem)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      無約束情形
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      有約束情形
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      二階全微分與曲率
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -489,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/taylor/" class="md-nav__link">
+      <a href="../taylor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/simul_eqs/" class="md-nav__link">
+      <a href="../simul_eqs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -531,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/optimization/" class="md-nav__link">
+      <a href="../optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -552,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ch0/pv_fv/" class="md-nav__link">
+      <a href="../pv_fv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -577,8 +721,6 @@
       
   
   
-    
-  
   
   
     
@@ -597,16 +739,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../ch1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -617,13 +759,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             第 1 章 &nbsp; 需求與供給
@@ -639,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="demand/" class="md-nav__link">
+      <a href="../../ch1/demand/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="supply/" class="md-nav__link">
+      <a href="../../ch1/supply/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="market/" class="md-nav__link">
+      <a href="../../ch1/market/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -731,7 +873,100 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      本章目錄
+      全微分的定義與矩陣表示
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="全微分的定義與矩陣表示">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      經濟詮釋：線性近似與邊際貢獻分解
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      對數微分與彈性分解
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      經濟學中的基本應用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composite-nested-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      多變數鏈式法則 (Composite / Nested Models)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      隱函數定理與比較靜態
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#envelope-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      包絡定理 (Envelope Theorem)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="包絡定理 (Envelope Theorem)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      無約束情形
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      有約束情形
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      二階全微分與曲率
     </span>
   </a>
   
@@ -755,23 +990,188 @@
   
 
 
-<html><body><h1 id="_1">需求與供給</h1>
-<figure class="chapter-hero">
-  <a class="glightbox" href="../assets/images/ch1-cover.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../assets/images/ch1-cover.png" alt="連日豪雨菜價漲，高麗菜漲三成五" loading="lazy"></a>
-  <figcaption>
-    圖片來源：
-    <a href="https://money.udn.com/money/story/122328/8914841" target="_blank" rel="noopener">
-      聯合報｜連日豪雨菜價漲 高麗菜漲三成五
-    </a>
-  </figcaption>
-</figure>
-
-<h2 id="_2">本章目錄</h2>
+<html><body><h1 id="_1">全微分</h1>
+<p>想像你是一位投資顧問，客戶詢問：「如果股市上漲5%，同時利率下降1%，我的投資組合價值會如何變化？」這個問題涉及多個變數同時變動對結果的綜合影響——也就是<strong>全微分</strong> (total differential) 所刻畫的「一小步變動會讓函數值改變多少」。全微分提供了線性近似的語言，讓我們在多變數環境下做敏感度分析與比較靜態。</p>
+<h2 id="_2">全微分的定義與矩陣表示</h2>
+<div class="admonition note">
+<p class="admonition-title">全微分</p>
+<p>設 <span class="arithmatex">\(f:\mathbb{R}^n\to\mathbb{R}\)</span> 在點 <span class="arithmatex">\(\mathbf{x}=(x_1,\dots,x_n)\)</span> 可微，對於小變化 <span class="arithmatex">\(dx_1,\dots,dx_n\)</span>，有</p>
+<div class="arithmatex">\[
+df \;\approx\; \sum_{i=1}^n \frac{\partial f}{\partial x_i}(\mathbf{x})\,dx_i
+\;=\; \nabla f(\mathbf{x})^\top\, d\mathbf{x},
+\]</div>
+<p>其中 <span class="arithmatex">\(\nabla f(\mathbf{x})=\left(\frac{\partial f}{\partial x_1},\dots,\frac{\partial f}{\partial x_n}\right)^\top\)</span>，
+<span class="arithmatex">\(d\mathbf{x}=(dx_1,\dots,dx_n)^\top\)</span>。忽略高於一次的小量，<span class="arithmatex">\(df\)</span> 給出 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(\mathbf{x}\)</span> 附近的線性近似。</p>
+</div>
+<p>若各自變數又都依賴某外生變數 <span class="arithmatex">\(t\)</span>，以<strong>全導數</strong> (total derivative) 表示為</p>
+<div class="arithmatex">\[
+\frac{df}{dt} \;=\; \sum_{i=1}^n \frac{\partial f}{\partial x_i}\frac{dx_i}{dt}
+\;=\; \nabla f^\top \frac{d\mathbf{x}}{dt}.
+\]</div>
+<h3 id="_3">經濟詮釋：線性近似與邊際貢獻分解</h3>
+<p>在需求 <span class="arithmatex">\(Q=Q(p,M,p_y,\dots)\)</span> 的例子裡，</p>
+<div class="arithmatex">\[
+dQ \;\approx\; Q_p\,dp + Q_M\,dM + Q_{p_y}\,dp_y + \cdots,
+\]</div>
+<p>每一項都是「邊際效果 <span class="arithmatex">\(\times\)</span> 該變數的小變化」，可用來做<strong>影響來源分解</strong> (哪個外生變動貢獻較大) 。</p>
+<h3 id="_4">對數微分與彈性分解</h3>
+<p>將上式改寫為比例變動的線性近似 (對數全微分) ：</p>
+<div class="arithmatex">\[
+d\ln f \;\approx\; \sum_{i=1}^n \underbrace{\frac{\partial f}{\partial x_i}\frac{x_i}{f}}_{\text{彈性 } \varepsilon_i}\, d\ln x_i,
+\]</div>
+<p>其中 <span class="arithmatex">\(\varepsilon_i\)</span> 即 <span class="arithmatex">\(f\)</span> 對 <span class="arithmatex">\(x_i\)</span> 的<strong>彈性</strong>。在實務上，這常用來解釋「多少％的 <span class="arithmatex">\(x_i\)</span> 變動帶來多少％的 <span class="arithmatex">\(f\)</span> 變動」。</p>
+<h2 id="_5">經濟學中的基本應用</h2>
 <ul>
-<li><a href="demand/">需求</a></li>
-<li><a href="supply/">供給</a></li>
-<li><a href="market/">市場均衡</a></li>
-</ul><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+<li><strong>需求敏感度</strong>：<span class="arithmatex">\(dQ \approx Q_p dp + Q_M dM\)</span>，量化「價格調整」與「所得變動」對數量的即時影響。</li>
+<li><strong>成本敏感度</strong>：總成本 <span class="arithmatex">\(C(\mathbf{w},Q)\)</span> 滿足 <span class="arithmatex">\(dC \approx \sum_i C_{w_i} dw_i + C_Q dQ\)</span>。在最適成本下，Shephard's lemma 告訴我們 <span class="arithmatex">\(C_{w_i}=x_i^*(\mathbf{w},Q)\)</span> (條件要素需求) ，於是
+  $$
+  dC \approx \sum_i x_i^*\,dw_i + MC\,dQ.
+  $$</li>
+<li><strong>利潤敏感度</strong>：<span class="arithmatex">\(\pi(p,\mathbf{w})=\max_Q {pQ-C(\mathbf{w},Q)}\)</span> 的最適值函數對參數的敏感度，將在「包絡定理」段落精確給出。</li>
+</ul>
+<h2 id="composite-nested-models">多變數鏈式法則 (Composite / Nested Models)</h2>
+<p>很多經濟模型是巢狀的：<span class="arithmatex">\(y = f\big(g(x,z),\, h(x,z)\big)\)</span>。令 <span class="arithmatex">\(u = g(x,z)\)</span>、<span class="arithmatex">\(v = h(x,z)\)</span>，則</p>
+<div class="arithmatex">\[
+\frac{\partial y}{\partial x}
+= f_u\,g_x + f_v\,h_x,
+\qquad
+\frac{\partial y}{\partial z}
+= f_u\,g_z + f_v\,h_z,
+\]</div>
+<p>其中 <span class="arithmatex">\(f_u \equiv \dfrac{\partial f}{\partial u}\)</span>、<span class="arithmatex">\(g_x \equiv \dfrac{\partial g}{\partial x}\)</span> 等。</p>
+<p>矩陣寫法為
+$$
+dy \;=\; \nabla f(u,v)^\top
+\begin{bmatrix}
+du\\ dv
+\end{bmatrix},
+\qquad
+\begin{bmatrix}
+du\\ dv
+\end{bmatrix}
+\;=\;
+J_{(g,h)}
+\begin{bmatrix}
+dx\\ dz
+\end{bmatrix},
+$$</p>
+<p>故有
+$$
+dy \;=\; \nabla f(u,v)^\top\, J_{(g,h)}\,
+d\begin{bmatrix}x\\ z\end{bmatrix}.
+$$</p>
+<h2 id="_6">隱函數定理與比較靜態</h2>
+<p>當經濟關係以方程 <span class="arithmatex">\(F(x,y)=0\)</span> 給定 (例如市場均衡、最適條件) ，且 <span class="arithmatex">\(F_y \neq 0\)</span>，則存在函數 <span class="arithmatex">\(y=\phi(x)\)</span> 使得</p>
+<div class="admonition note">
+<p class="admonition-title">隱函數定理的一階比較靜態</p>
+<div class="arithmatex">\[
+\frac{dy}{dx} \;=\; -\,\frac{F_x}{F_y}.
+\]</div>
+</div>
+<p>更一般地，對參數向量 <span class="arithmatex">\(\boldsymbol{\theta}\)</span> 有 <span class="arithmatex">\(F(\mathbf{x},\boldsymbol{\theta})=\mathbf{0}\)</span>，若 <span class="arithmatex">\(J_{\mathbf{x}}F\)</span> 可逆，則<strong>比較靜態</strong> (small-change sensitivity) 為</p>
+<div class="arithmatex">\[
+\frac{d\mathbf{x}}{d\boldsymbol{\theta}}
+\;=\;
+-\big(J_{\mathbf{x}}F\big)^{-1}\, J_{\boldsymbol{\theta}}F.
+\]</div>
+<div class="admonition example">
+<p class="admonition-title">壟斷者最適產量</p>
+<p>一階條件 <span class="arithmatex">\(F(Q,p)\equiv MR(Q,p)-MC(Q)=0\)</span>，
+$$
+\frac{dQ^*}{dp}
+= -\,\frac{F_p}{F_Q}
+= -\,\frac{\partial MR/\partial p}{\partial MR/\partial Q \;-\; \partial MC/\partial Q}.
+$$</p>
+</div>
+<h2 id="envelope-theorem">包絡定理 (Envelope Theorem)</h2>
+<p>當我們關心<strong>最適值函數</strong>對參數的變化率，而非最適解本身如何變動，包絡定理提供了極其有效的捷徑。</p>
+<h3 id="_7">無約束情形</h3>
+<p>令
+$$
+V(\theta) \;=\; \max_{x}\; f(x,\theta),
+$$
+最適解 <span class="arithmatex">\(x^*(\theta)\)</span> 滿足 <span class="arithmatex">\(f_x(x^*,\theta)=0\)</span>。若規則性條件成立，則</p>
+<div class="admonition note">
+<p class="admonition-title">包絡定理 (無約束)</p>
+<div class="arithmatex">\[
+\frac{dV}{d\theta}
+\;=\;
+\left.\frac{\partial f(x,\theta)}{\partial \theta}\right|_{x=x^*(\theta)}.
+\]</div>
+</div>
+<p>也就是說，不需要追蹤 <span class="arithmatex">\(x^*(\theta)\)</span> 的變動，只要在最適點把 <span class="arithmatex">\(x\)</span> 當常數、直接對 <span class="arithmatex">\(\theta\)</span> 偏微分。</p>
+<div class="admonition example">
+<p class="admonition-title">壟斷利潤對價格參數的敏感度</p>
+<p><span class="arithmatex">\(\pi^*(p)=\max_Q \{\,pQ-C(Q)\,\}\)</span>，則：</p>
+<div class="arithmatex">\[
+\frac{d\pi^*}{dp}
+= \left.\frac{\partial (pQ-C)}{\partial p}\right|_{Q=Q^*(p)}
+= Q^*(p).
+\]</div>
+</div>
+<h3 id="_8">有約束情形</h3>
+<p>令
+$$
+V(\theta) \;=\; \max_{x}\; f(x,\theta)\ \text{s.t.}\ g(x,\theta)=0,
+$$
+拉氏量 <span class="arithmatex">\(\mathcal{L}=f(x,\theta)+\lambda\,g(x,\theta)\)</span>。在最適 <span class="arithmatex">\((x^*,\lambda^*)\)</span> 下，</p>
+<div class="admonition note">
+<p class="admonition-title">包絡定理 (等式約束)</p>
+<div class="arithmatex">\[
+\frac{dV}{d\theta}
+=
+\left.\Big(\frac{\partial f}{\partial \theta}+\lambda\,\frac{\partial g}{\partial \theta}\Big)\right|_{(x^*,\lambda^*)}.
+\]</div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">成本函數與要素價格</p>
+<div class="arithmatex">\[
+C(\mathbf{w},Q)=\min_{\mathbf{x}}\ \sum_i w_i x_i
+\quad \text{s.t.}\quad f(\mathbf{x})\ge Q
+\]</div>
+<p>的包絡定理給出</p>
+<div class="arithmatex">\[
+\frac{\partial C}{\partial w_i}=x_i^*(\mathbf{w},Q),\qquad
+\frac{\partial C}{\partial Q}=\lambda^*=\text{MC}.
+\]</div>
+</div>
+<h2 id="_9">二階全微分與曲率</h2>
+<p>更精細的近似可以加入二階項：
+$$
+df \;\approx\; \nabla f^\top d\mathbf{x} \;+\; \tfrac{1}{2}\, d\mathbf{x}^\top H_f\, d\mathbf{x},
+$$
+其中 <span class="arithmatex">\(H_f\)</span> 為 Hessian 矩陣；這與前述凹凸性判斷緊密相關，常用於二階比較靜態或福利變化二階近似。</p>
+<div class="admonition question">
+<p class="admonition-title">全微分與彈性分解 (需求敏感度)</p>
+<p>某商品需求 <span class="arithmatex">\(Q(p,M)=A\,M^{\eta}\,p^{-\varepsilon}\)</span>，其中 <span class="arithmatex">\(A&gt;0\)</span>、<span class="arithmatex">\(\eta,\varepsilon&gt;0\)</span>。</p>
+<ol>
+<li>推導 <span class="arithmatex">\(dQ\)</span> 的全微分表示式。  </li>
+<li>以對數微分形式寫出 <span class="arithmatex">\(d\ln Q\)</span>，並解釋兩個彈性 <span class="arithmatex">\(\eta,\varepsilon\)</span> 的經濟意義。  </li>
+<li>令 <span class="arithmatex">\(A=1,\ \eta=0.6,\ \varepsilon=1.2\)</span>；若 <span class="arithmatex">\(dp/p=+5\%\)</span>、<span class="arithmatex">\(dM/M=+4\%\)</span>，用線性近似預測 <span class="arithmatex">\(dQ/Q\)</span>。  </li>
+<li>設 <span class="arithmatex">\(p=10,\ M=100\)</span>，計算上題中的 <span class="arithmatex">\(dQ\)</span> 數值近似。</li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">隱函數定理與比較靜態 (均衡)</p>
+<p>市場由需求 <span class="arithmatex">\(Q^d=60-2p+\alpha M\)</span>、供給 <span class="arithmatex">\(Q^s=-10+3p\)</span> 決定均衡 <span class="arithmatex">\(F(p,M)\equiv Q^d-Q^s=0\)</span>。</p>
+<ol>
+<li>寫出 <span class="arithmatex">\(F(p,M)=0\)</span> 並求 <span class="arithmatex">\(\displaystyle \frac{\partial p^*}{\partial M}\)</span>。  </li>
+<li>解釋 <span class="arithmatex">\(\alpha&gt;0\)</span> 時，所得上升對均衡價格的影響方向。  </li>
+<li>令 <span class="arithmatex">\(\alpha=0.2\)</span>，在 <span class="arithmatex">\(M=100\)</span> 的附近估算 <span class="arithmatex">\(dM=+5\)</span> 對 <span class="arithmatex">\(p^*\)</span> 的近似變動。</li>
+</ol>
+</div>
+<div class="admonition question">
+<p class="admonition-title">包絡定理 (利潤敏感度)</p>
+<p>壟斷者面對線性需求 <span class="arithmatex">\(p=a-bQ\)</span>、成本 <span class="arithmatex">\(C(Q)=F+cQ+\tfrac{1}{2}\gamma Q^2\)</span>。定義最適利潤
+$$
+\pi^*(a)=\max_Q \big[(a-bQ)Q - C(Q)\big].
+$$</p>
+<ol>
+<li>用一階條件求最適 <span class="arithmatex">\(Q^*(a)\)</span>。  </li>
+<li>用包絡定理求 <span class="arithmatex">\(\dfrac{d\pi^*}{da}\)</span> 並詮釋其意義。  </li>
+<li>比較直接對最適利潤函數微分 vs. 先代回 <span class="arithmatex">\(Q^*(a)\)</span> 再微分的難易差異。</li>
+</ol>
+</div><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body></html>
 
@@ -811,7 +1211,7 @@ document$.subscribe(() => { lightbox.reload() });
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../ch0/pv_fv/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 0.10 &amp;nbsp; 現值與未來值">
+          <a href="../partial_diff/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 0.5 &amp;nbsp; 偏微分">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -821,20 +1221,20 @@ document$.subscribe(() => { lightbox.reload() });
                 Previous
               </span>
               <div class="md-ellipsis">
-                0.10 &nbsp; 現值與未來值
+                0.5 &nbsp; 偏微分
               </div>
             </div>
           </a>
         
         
           
-          <a href="demand/" class="md-footer__link md-footer__link--next" aria-label="Next: 1.1 &amp;nbsp; 需求">
+          <a href="../taylor/" class="md-footer__link md-footer__link--next" aria-label="Next: 0.7 &amp;nbsp; 泰勒級數與泰勒展開">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1.1 &nbsp; 需求
+                0.7 &nbsp; 泰勒級數與泰勒展開
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -868,12 +1268,12 @@ document$.subscribe(() => { lightbox.reload() });
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
-        <script src="../js/quiz.js"></script>
+        <script src="../../js/quiz.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
