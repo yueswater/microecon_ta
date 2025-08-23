@@ -69,6 +69,8 @@ extra:
     dismiss: true
     text: >
       📢 本課程的助教課時間將於九月初公布，請同學隨時注意網站更新。
+  hyvor_talk:
+    website_id: "13970"
 extra_javascript:
   - js/quiz.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

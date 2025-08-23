@@ -2,7 +2,7 @@
 <div id="comments" class="md-typeset">
   <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
   <hyvor-talk-comments
-    website-id="13970"
+    website-id="{{ config.extra.hyvor_talk.website_id }}"
     page-id="{{ page.url | url }}"
     page-url="{{ page.canonical_url }}"
   ></hyvor-talk-comments>
