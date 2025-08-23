@@ -3,7 +3,6 @@
   --md-accent-fg-color: #1a1a1a;
 }
 
-/* general setting */
 .md-header__title .md-ellipsis {
   font-weight: 900 !important;
 }
@@ -47,7 +46,6 @@ form.quiz label {
   border-radius: 4px;
 }
 
-/* light mode setting */
 .md-header__button.md-logo img {
   content: url('../assets/images/logo-dark.svg');
 }
@@ -68,7 +66,6 @@ form.quiz label {
   color: #349890 !important;
 }
 
-/* dark mode setting */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color: #22272e;
   --md-default-bg-color: #22272e;
@@ -96,4 +93,52 @@ form.quiz label {
 
 [data-md-color-scheme="slate"] .md-nav__link:hover {
   color: #bfc1c7 !important;
+}
+
+
+form.booking {
+  background: var(--md-default-bg-color);
+  padding: 1.5em;
+  border-radius: 0.75em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  max-width: 400px;
+}
+
+form.booking label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+}
+
+form.booking input[type="text"],
+form.booking input[type="date"] {
+  width: 100%;
+  padding: 0.6em 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form.booking input:focus {
+  border-color: #349890;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52,152,144,0.25);
+}
+
+form.booking button {
+  display: inline-block;
+  background-color: #349890;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6em 1.2em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+form.booking button:hover {
+  background-color: #2a776c;
 }
