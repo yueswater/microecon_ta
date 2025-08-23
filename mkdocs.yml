@@ -6,7 +6,16 @@ repo_name: yueswater/microecon_ta
 nav:
   - 第 0 章 &nbsp; 個體經濟學數學基礎: 
     - ch0/index.md
-    - 0.1 &nbsp; 微積分: ch0/calculus.md
+    - 0.1 &nbsp; 函數: ch0/function.md
+    - 0.2 &nbsp; 極限與連續性: ch0/limit.md
+    - 0.3 &nbsp; 微分: ch0/diff.md
+    - 0.4 &nbsp; 積分: ch0/integration.md
+    - 0.5 &nbsp; 偏微分: ch0/partial_diff.md
+    - 0.6 &nbsp; 全微分: ch0/total_diff.md
+    - 0.7 &nbsp; 泰勒級數與泰勒展開: ch0/taylor.md
+    - 0.8 &nbsp; 聯立方程式的求解: ch0/simul_eqs.md
+    - 0.9 &nbsp; 最適化: ch0/optimization.md
+    - 0.10 &nbsp; 現值與未來值: ch0/pv_fv.md
   - 第 1 章 &nbsp; 需求與供給: 
     - ch1/index.md
     - 1.1 &nbsp; 需求: ch1/demand.md
@@ -31,7 +40,9 @@ theme:
     text: Noto Sans TC
     code: Fira Code
   features:
+    - navigation.footer
     - navigation.indexes
+    - navigation.path
     - navigation.top
     - search.suggest
     - search.highlight
