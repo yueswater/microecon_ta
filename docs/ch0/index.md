@@ -13,7 +13,7 @@
 
 ## 本章目錄
 
-- [函數](demand.md)
+- [函數](function.md)
 - [極限與連續性](limit.md)
 - [微分](diff.md)
 - [積分](integration.md)
