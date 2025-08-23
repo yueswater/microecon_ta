@@ -51,6 +51,10 @@
 
 請至[此處](https://drive.google.com/drive/folders/1h1KW5HWPeQO-BstzhF-tTCNhVvRJ4PC0?usp=sharing)下載助教課講義。
 
+## 留言區注意事項
+
+請善用留言區提問或與同學們相互討論，本站留言區使用 [Hyvor Talk](https://talk.hyvor.com/)，需要登入才能留言，但可以在 Hyvor 設定顯示名稱。
+
 ## 公告區
 
 - **2025/08/24**：課程網站建立，將持續更新課程進度與教材。
