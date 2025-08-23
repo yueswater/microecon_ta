@@ -3,3 +3,17 @@
 {% block announce %}
   📢 本課程的助教課時間將於九月初公布，請同學隨時注意網站更新。
 {% endblock %}
+
+{% block content %}
+  <div class="md-content" data-md-component="content">
+    <article class="md-content__inner md-typeset">
+      {% block content_inner %}
+        {{ page.content }}
+      {% endblock %}
+      
+      {% if page %}
+        {% include "partials/comments.html" %}
+      {% endif %}
+    </article>
+  </div>
+{% endblock %}
