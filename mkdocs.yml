@@ -21,6 +21,11 @@ nav:
     - 1.1 &nbsp; 需求: ch1/demand.md
     - 1.2 &nbsp; 供給: ch1/supply.md
     - 1.3 &nbsp; 均衡分析: ch1/market.md
+  - 第 2 章 &nbsp; 彈性: 
+    - ch2/index.md
+    - 2.1 &nbsp; 價格彈性: ch2/price_elasticity.md
+    - 2.2 &nbsp; 交叉彈性與所得彈性: ch2/cross_and_income_elasticity.md
+    - 2.3 &nbsp; 彈性應用: ch2/elasticity_application.md
 theme:
   name: material
   custom_dir: overrides
