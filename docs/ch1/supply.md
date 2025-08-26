@@ -21,14 +21,14 @@ Table: 供給表範例 {#supply-schedule}
 === "供給量的移動 (movement)"
 
     <figure class="img-center" markdown>
-    ![movement](images/sc_mv.png){ width="350" }
+    ![movement](images/供給—點的移動.png){ width="350" }
     <figcaption>圖 A：沿既有供給曲線移動</figcaption>
     </figure>
 
 === "供給的變動 (shift)"
 
     <figure class="img-center" markdown>
-    ![shift](images/sc_sh.png){ width="350" }
+    ![shift](images/供給—線的移動.png){ width="350" }
     <figcaption>圖 B：供給曲線橫移</figcaption>
     </figure>
 
@@ -45,11 +45,11 @@ Table: 供給表範例 {#supply-schedule}
 
 與需求相同，將表 [(1)](#supply-schedule) 中的每個價量組合繪制在二維的座標平面上，並將每個點連線，即可得到由供給表繪製而成的供給曲線。
 
-![供給曲線 (離散)](images/sc1.png){ width="350" }
+![供給曲線 (離散)](images/供給曲線-1.png){ width="350" }
 
 如果描述供給的方法並非離散而是連續，則繪製的供給曲線是一個平滑的曲線。
 
-![供給曲線 (連續)](images/sc2.png){ width="350" }
+![供給曲線 (連續)](images/供給曲線-2.png){ width="350" }
 
 一般而言，大部分的商品或是勞務，在其他條件不變之下，當價格高時供給量較高，價格低時供給量較低，此現象稱為**供給法則** (the law of supply)。供給曲線表達特定價格下，生產者願意且能夠供應的最大供給量，更進一步描述特定供給量下生產者願意接受的最低價格。
 
@@ -128,7 +128,7 @@ $$
 
 這個例子說明市場供給函數可能呈現分段函數的特徵，反映不同價格區間內參與市場的廠商數量不同。
 
-![市場供給曲線](images/market_sc.png){ width="700" }
+![市場供給曲線](images/市場供給線.png){ width="700" }
 
 !!! question "水平加總之二"
     假設某特定商品的市場上存在兩家廠商，兩家廠商的供給函數分別為：
@@ -156,7 +156,7 @@ $$
 
 舉例來說，假設某農夫願意以最低 $\$15$ 的價格出售一公斤有機蔬菜，但市場價格為 $\$25$。在這種情況下，農夫獲得的生產者剩餘就是 $\$25 - \$15 = \$10$。這 $\$10$ 代表農夫從這次交易中獲得的「額外利益」或「生產者福利」。
 
-![生產者剩餘](images/ps.png){ width="350" }
+![生產者剩餘](images/生產者剩餘.png){ width="350" }
 
 ### 離散型商品的生產者剩餘
 
