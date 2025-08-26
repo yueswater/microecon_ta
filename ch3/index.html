@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../diff/">
+        <link rel="prev" href="../ch2/elasticity_application/">
       
       
-        <link rel="next" href="../partial_diff/">
+        <link rel="next" href="price_control/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.21">
     
     
       
-        <title>0.4   積分 - 個體經濟學</title>
+        <title>供需模型應用 - 個體經濟學</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,18 +46,18 @@
       
     
     
-      <link rel="stylesheet" href="../../styles.css">
+      <link rel="stylesheet" href="../styles.css">
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -66,7 +66,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -118,7 +118,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="個體經濟學" class="md-header__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+    <a href=".." title="個體經濟學" class="md-header__button md-logo" aria-label="個體經濟學" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -138,7 +138,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              0.4 &nbsp; 積分
+              供需模型應用
             
           </span>
         </div>
@@ -279,7 +279,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="個體經濟學" class="md-nav__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+    <a href=".." title="個體經濟學" class="md-nav__button md-logo" aria-label="個體經濟學" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -306,8 +306,6 @@
       
   
   
-    
-  
   
   
     
@@ -340,16 +338,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../ch0/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -366,7 +364,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             第 0 章 &nbsp; 個體經濟學數學基礎
@@ -382,7 +380,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../function/" class="md-nav__link">
+      <a href="../ch0/function/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -403,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../limit/" class="md-nav__link">
+      <a href="../ch0/limit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -424,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../diff/" class="md-nav__link">
+      <a href="../ch0/diff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -442,30 +440,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    0.4 &nbsp; 積分
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../ch0/integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,134 +452,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      積分的基本概念
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      基本積分公式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="基本積分公式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      常用積分公式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      積分技巧
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="積分技巧">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      分部積分法
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      換元積分法
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      經濟學中的積分應用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="經濟學中的積分應用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      消費者剩餘的計算
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      生產者剩餘的計算
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      現值計算中的積分
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -614,7 +464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../partial_diff/" class="md-nav__link">
+      <a href="../ch0/partial_diff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -635,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../total_diff/" class="md-nav__link">
+      <a href="../ch0/total_diff/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -656,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../taylor/" class="md-nav__link">
+      <a href="../ch0/taylor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -677,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../simul_eqs/" class="md-nav__link">
+      <a href="../ch0/simul_eqs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -698,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../optimization/" class="md-nav__link">
+      <a href="../ch0/optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -719,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pv_fv/" class="md-nav__link">
+      <a href="../ch0/pv_fv/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -771,7 +621,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ch1/" class="md-nav__link ">
+            <a href="../ch1/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -804,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch1/demand/" class="md-nav__link">
+      <a href="../ch1/demand/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -825,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch1/supply/" class="md-nav__link">
+      <a href="../ch1/supply/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -846,7 +696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch1/market/" class="md-nav__link">
+      <a href="../ch1/market/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -898,7 +748,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ch2/" class="md-nav__link ">
+            <a href="../ch2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -931,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch2/price_elasticity/" class="md-nav__link">
+      <a href="../ch2/price_elasticity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -952,7 +802,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch2/cross_and_income_elasticity/" class="md-nav__link">
+      <a href="../ch2/cross_and_income_elasticity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -973,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch2/elasticity_application/" class="md-nav__link">
+      <a href="../ch2/elasticity_application/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -998,6 +848,8 @@
       
   
   
+    
+  
   
   
     
@@ -1018,16 +870,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ch3/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   <span class="md-ellipsis">
@@ -1038,13 +890,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_4" id="__nav_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             第 3 章 &nbsp; 供需模型應用
@@ -1060,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch3/price_control/" class="md-nav__link">
+      <a href="price_control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1081,7 +933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch3/quantity_control/" class="md-nav__link">
+      <a href="quantity_control/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1102,7 +954,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch3/tax/" class="md-nav__link">
+      <a href="tax/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1123,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ch3/subsidy/" class="md-nav__link">
+      <a href="subsidy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1173,108 +1025,9 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      積分的基本概念
+      本章目錄
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      基本積分公式
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="基本積分公式">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      常用積分公式
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      積分技巧
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="積分技巧">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      分部積分法
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      換元積分法
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      經濟學中的積分應用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="經濟學中的積分應用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      消費者剩餘的計算
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      生產者剩餘的計算
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    <span class="md-ellipsis">
-      現值計算中的積分
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1293,101 +1046,26 @@
   <div class="md-content" data-md-component="content">
     <article class="md-content__inner md-typeset">
       
-        <html><body><h1 id="_1">積分</h1>
-<p>想像你是一位老闆，正在評估今年的營運表現。每個月的利潤都不相同：1月賺了5萬，2月因為春節假期只賺2萬，3月景氣回升賺了8萬⋯⋯。要計算全年總利潤，你需要將每個月的利潤「累積」起來。這個累積的過程，在數學上就是積分的概念。</p>
-<p>更進一步地，如果你想計算消費者從某個商品獲得的總效用，你需要將每一單位消費帶來的邊際效用加總起來；如果你想知道在某個價格區間內的消費者剩餘，你需要計算需求曲線下方的面積。積分不僅是微分的逆運算，更是經濟學中計算「總量」概念的重要工具。從消費者剩餘、生產者剩餘的計算，到現值分析中的連續複利計算，再到經濟成長模型中的動態分析，積分在經濟學的各個領域都扮演著關鍵角色。</p>
-<h2 id="_2">積分的基本概念</h2>
-<p><strong>積分</strong> (integration) 是微分的逆運算，用於計算函數下方的面積或累積變化量。在經濟學中，積分常用於從邊際量計算總量。</p>
-<div class="admonition note">
-<p class="admonition-title">不定積分</p>
-<p>若 <span class="arithmatex">\(F^{\prime}(x) = f(x)\)</span>，則稱 <span class="arithmatex">\(F(x)\)</span> 為 <span class="arithmatex">\(f(x)\)</span> 的一個<strong>原函數</strong> (primitive function) 或<strong>反導數</strong> (antiderivative)。<span class="arithmatex">\(f(x)\)</span> 的所有原函數稱為<strong>不定積分</strong>，記作：
-$$
-\int f(x) \, dx = F(x) + C
-$$
-其中 <span class="arithmatex">\(C\)</span> 為積分常數。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">定積分</p>
-<p>函數 <span class="arithmatex">\(f(x)\)</span> 在區間 <span class="arithmatex">\([a, b]\)</span> 上的<strong>定積分</strong>定義為：
-$$
-\int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i) \Delta x
-$$
-其中 <span class="arithmatex">\(\Delta x = \frac{b-a}{n}\)</span>，<span class="arithmatex">\(x_i = a + i \Delta x\)</span>。</p>
-<p>根據微積分基本定理：
-$$
-\int_a^b f(x) \, dx = F(b) - F(a)
-$$
-其中 <span class="arithmatex">\(F(x)\)</span> 為 <span class="arithmatex">\(f(x)\)</span> 的任一原函數。</p>
-</div>
-<h2 id="_3">基本積分公式</h2>
-<h3 id="_4">常用積分公式</h3>
-<ol>
-<li><strong>冪函數</strong>：<span class="arithmatex">\(\int x^n \, dx = \frac{x^{n+1}}{n+1} + C\)</span> (<span class="arithmatex">\(n \neq -1\)</span>)</li>
-<li><strong>倒數函數</strong>：<span class="arithmatex">\(\int \frac{1}{x} \, dx = \ln|x| + C\)</span></li>
-<li><strong>指數函數</strong>：<span class="arithmatex">\(\int e^x \, dx = e^x + C\)</span>，<span class="arithmatex">\(\int a^x \, dx = \frac{a^x}{\ln a} + C\)</span></li>
-<li><strong>對數函數</strong>：<span class="arithmatex">\(\int \ln x \, dx = x \ln x - x + C\)</span></li>
-</ol>
-<h3 id="_5">積分技巧</h3>
-<h4 id="_6">分部積分法</h4>
-<div class="arithmatex">\[
-\int u \, dv = uv - \int v \, du
-\]</div>
-<h4 id="_7">換元積分法</h4>
-<p>若 <span class="arithmatex">\(x = g(t)\)</span>，則：
-$$
-\int f(x) \, dx = \int f(g(t)) g^{\prime}(t) \, dt
-$$</p>
-<h2 id="_8">經濟學中的積分應用</h2>
-<h3 id="_9">消費者剩餘的計算</h3>
-<p>對於需求函數 <span class="arithmatex">\(p = p(Q)\)</span>，在市場價格 <span class="arithmatex">\(p^*\)</span> 下，消費者剩餘為：</p>
-<div class="arithmatex">\[
-CS = \int_0^{Q^{*}} p(Q) \, dQ - p^* \cdot Q^*
-\]</div>
-<div class="admonition example">
-<p class="admonition-title">積分應用：消費者剩餘</p>
-<p>給定線性需求函數 <span class="arithmatex">\(p = 100 - 2Q\)</span>。在市場價格 <span class="arithmatex">\(p^* = 60\)</span> 時，均衡數量 <span class="arithmatex">\(Q^* = 20\)</span>：
-$$
-\begin{aligned}
-CS &amp;= \int_0^{20} (100 - 2Q) \, dQ - 60 \times 20\\
-&amp;= \left[100Q - Q^2\right]_0^{20} - 1200 = 2000 - 400 - 1200 = 400
-\end{aligned}
-$$</p>
-</div>
-<h3 id="_10">生產者剩餘的計算</h3>
-<p>對於供給函數 <span class="arithmatex">\(p = p(Q)\)</span>，在市場價格 <span class="arithmatex">\(p^*\)</span> 下，生產者剩餘為：</p>
-<div class="arithmatex">\[
-PS = p^* \cdot Q^* - \int_0^{Q^*} p(Q) \, dQ
-\]</div>
-<div class="admonition example">
-<p class="admonition-title">積分應用：生產者剩餘</p>
-<p>給定線性供給函數 <span class="arithmatex">\(p = 10 + Q\)</span>。在市場價格 <span class="arithmatex">\(p^* = 60\)</span> 時，均衡數量 <span class="arithmatex">\(Q^* = 50\)</span>：
-$$
-\begin{aligned}
-PS &amp;= 60 \times 50 - \int_0^{50} (10 + Q) \, dQ\\
-&amp;= 3000 - \left[10Q + \frac{Q^2}{2}\right]_0^{50} = 3000 - (500 + 1250) = 1250
-\end{aligned}
-$$</p>
-</div>
-<h3 id="_11">現值計算中的積分</h3>
-<p>對於連續現金流 <span class="arithmatex">\(f(t)\)</span>，在利率 <span class="arithmatex">\(r\)</span> 下的現值為：
-$$
-PV = \int_0^T f(t) e^{-rt} \, dt
-$$</p>
-<p><strong>例子</strong>：永續年金現值</p>
-<p>若每年收到固定現金流 <span class="arithmatex">\(A\)</span>，利率為 <span class="arithmatex">\(r\)</span>：
-$$
-PV = \int_0^{\infty} A e^{-rt} \, dt = A \left[-\frac{1}{r} e^{-rt}\right]_0^{\infty} = \frac{A}{r}
-$$</p>
-<div class="admonition question">
-<p class="admonition-title">積分應用：現值計算</p>
-<p>某商品的需求函數為 <span class="arithmatex">\(Q^d = 50 - p^2\)</span>，供給函數為 <span class="arithmatex">\(Q^s = 2p - 10\)</span>。</p>
-<ol>
-<li>求市場均衡點 <span class="arithmatex">\((p^*, Q^*)\)</span></li>
-<li>計算消費者剩餘</li>
-<li>計算生產者剩餘</li>
-<li>求總社會福利 (消費者剩餘 + 生產者剩餘)</li>
-</ol>
-</div><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+        <html><body><h1 id="_1">供需模型應用</h1>
+<figure class="chapter-hero">
+  <a class="glightbox" href="../assets/images/ch2-cover.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../assets/images/ch2-cover.png" alt="民眾至大賣場瘋搶衛生紙" loading="lazy"></a>
+  <figcaption>
+    圖片來源：
+    <a href="https://www.cw.com.tw/article/5099427" target="_blank" rel="noopener">
+      天下雜誌 | 衛生紙之亂蔓延全球：又不能防疫，為什麼各國民眾都搶購衛生紙？
+    </a>
+  </figcaption>
+</figure>
+
+<p>供需模型是經濟學中最基礎且最重要的分析工具之一，它不僅能夠解釋市場價格的形成機制，更是理解各種經濟政策效果的關鍵框架。在現實的市場環境中，政府經常會基於各種考量而介入市場運作，例如為了保護消費者而設定價格上限，或為了保障生產者利益而制定價格下限。看似簡單的價格管制措施，實則會對整個市場體系產生深遠而複雜的影響。</p>
+<p>透過供需模型的分析視角，我們可以清楚地觀察到價格干預政策如何改變市場的自然均衡狀態。當政府設定的管制價格偏離市場均衡價格時，往往會引發一系列連鎖反應，包括商品短缺或過剩、消費者行為改變、生產者策略調整，以及整體社會福利的重新分配。這些現象不僅影響當下的市場運作，更可能對長期的經濟發展產生持續性的效應。</p>
+<h2 id="_2">本章目錄</h2>
+<ul>
+<li><a href="price_control/">限價政策</a></li>
+<li><a href="quantity_control/">限量政策</a></li>
+<li><a href="tax/">課稅政策</a></li>
+<li><a href="subsidy/">補貼政策</a></li>
+</ul><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body></html>
       
@@ -1430,7 +1108,7 @@ document$.subscribe(() => { lightbox.reload() });
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../diff/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 0.3 &amp;nbsp; 微分">
+          <a href="../ch2/elasticity_application/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 2.3 &amp;nbsp; 彈性應用">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1440,20 +1118,20 @@ document$.subscribe(() => { lightbox.reload() });
                 Previous
               </span>
               <div class="md-ellipsis">
-                0.3 &nbsp; 微分
+                2.3 &nbsp; 彈性應用
               </div>
             </div>
           </a>
         
         
           
-          <a href="../partial_diff/" class="md-footer__link md-footer__link--next" aria-label="Next: 0.5 &amp;nbsp; 偏微分">
+          <a href="price_control/" class="md-footer__link md-footer__link--next" aria-label="Next: 3.1 &amp;nbsp; 限價政策">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                0.5 &nbsp; 偏微分
+                3.1 &nbsp; 限價政策
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1487,12 +1165,12 @@ document$.subscribe(() => { lightbox.reload() });
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["announce", "announce.dismiss", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce", "announce.dismiss", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
       
-        <script src="../../js/quiz.js"></script>
+        <script src="../js/quiz.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
