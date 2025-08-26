@@ -18,19 +18,11 @@ Table: 需求表範例 {#demand-schedule}
 需求的變動是指當消費者所得、偏好、相關財貨價格、預期等非價格因素發生改變時，整個需求關係產生位移，導致需求曲線本身向左或向右移動。
 相對地，需求量的變動則純粹因為商品本身價格的上升或下降所引起，消費者僅是沿著既有的需求曲線在不同價格點之間移動，需求關係本身並未改變。
 
-=== "需求量的移動 (movement)"
+=== "需求量的移動"
+    ![需求量的移動](images/dc_mv.png){ width="350" }
 
-    <figure class="img-center" markdown>
-    ![movement](images/dc_mv.png){ width="350" }
-    <figcaption>圖 A：沿既有需求曲線移動</figcaption>
-    </figure>
-
-=== "需求的變動 (shift)"
-
-    <figure class="img-center" markdown>
-    ![shift](images/dc_sh.png){ width="350" }
-    <figcaption>圖 B：需求曲線橫移</figcaption>
-    </figure>
+=== "需求的變動"
+    ![需求的變動](images/dc_sh.png){ width="350" }
 
 ## 需求的呈現
 

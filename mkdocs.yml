@@ -26,6 +26,12 @@ nav:
     - 2.1 &nbsp; 價格彈性: ch2/price_elasticity.md
     - 2.2 &nbsp; 交叉彈性與所得彈性: ch2/cross_and_income_elasticity.md
     - 2.3 &nbsp; 彈性應用: ch2/elasticity_application.md
+  - 第 3 章 &nbsp; 供需模型應用: 
+    - ch3/index.md
+    - 3.1 &nbsp; 限價政策: ch3/price_control.md
+    - 3.2 &nbsp; 限量政策: ch3/quantity_control.md
+    - 3.3 &nbsp; 課稅政策: ch3/tax.md
+    - 3.4 &nbsp; 補貼政策: ch3/subsidy.md
 theme:
   name: material
   custom_dir: overrides

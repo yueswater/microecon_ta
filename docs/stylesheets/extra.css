@@ -99,8 +99,12 @@ form.quiz label {
   --md-typeset-a-color: #349890 !important;
 }
 
-[data-md-color-scheme="default"] .md-typeset a:hover {
-  text-decoration-color: #349890 !important;
+[data-md-color-scheme="default"] .md-typeset a,
+[data-md-color-scheme="default"] .md-typeset a:visited,
+[data-md-color-scheme="default"] .md-typeset a:hover,
+[data-md-color-scheme="default"] .md-typeset a:active {
+  color: #333333 !important;
+  text-decoration-color: #333333 !important;
 }
 
 [data-md-color-scheme="slate"] {
@@ -109,6 +113,11 @@ form.quiz label {
 
 [data-md-color-scheme="slate"] .md-typeset a:hover {
   text-decoration-color: var(--md-typeset-a-color);
+}
+[data-md-color-scheme="slate"] .md-typeset a:hover,
+[data-md-color-scheme="slate"] .md-typeset a:active {
+  color: #349890 !important;
+  text-decoration-color: #349890 !important;
 }
 
 
