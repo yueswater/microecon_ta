@@ -1,0 +1,2538 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../budget_constraint/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>4.1   效用 - 個體經濟學</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans TC";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+  📢 本課程的助教課時間將於九月初公布，請同學隨時注意網站更新。
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="個體經濟學" class="md-header__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            個體經濟學
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4.1 &nbsp; 效用
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue"  aria-label="切換深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切換深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue"  aria-label="切換淺色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切換淺色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="zh-Hant" class="md-select__link">
+              繁體中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yueswater/microecon_ta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yueswater/microecon_ta
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="個體經濟學" class="md-nav__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    個體經濟學
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yueswater/microecon_ta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yueswater/microecon_ta
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ch0/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 0 章 &nbsp; 個體經濟學數學基礎
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            第 0 章 &nbsp; 個體經濟學數學基礎
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.1 &nbsp; 函數
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/limit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.2 &nbsp; 極限與連續性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.3 &nbsp; 微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.4 &nbsp; 積分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/partial_diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.5 &nbsp; 偏微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/total_diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.6 &nbsp; 全微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/taylor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.7 &nbsp; 泰勒級數與泰勒展開
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/simul_eqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.8 &nbsp; 聯立方程式的求解
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.9 &nbsp; 最適化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/pv_fv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.10 &nbsp; 現值與未來值
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ch1/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 1 章 &nbsp; 需求與供給
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            第 1 章 &nbsp; 需求與供給
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch1/demand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 &nbsp; 需求
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch1/supply/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 &nbsp; 供給
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch1/market/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 &nbsp; 均衡分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ch2/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 2 章 &nbsp; 彈性
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            第 2 章 &nbsp; 彈性
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch2/price_elasticity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 &nbsp; 價格彈性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch2/cross_and_income_elasticity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 &nbsp; 交叉彈性與所得彈性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch2/elasticity_application/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 &nbsp; 彈性應用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ch3/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 3 章 &nbsp; 供需模型應用
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            第 3 章 &nbsp; 供需模型應用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch3/price_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 &nbsp; 限價政策
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch3/quantity_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 &nbsp; 限量政策
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch3/tax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 &nbsp; 課稅政策
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch3/subsidy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4 &nbsp; 補貼政策
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 4 章 &nbsp; 消費者理論
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            第 4 章 &nbsp; 消費者理論
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.1 &nbsp; 效用
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4.1 &nbsp; 效用
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      理性行為與選擇公理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="理性行為與選擇公理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#completeness" class="md-nav__link">
+    <span class="md-ellipsis">
+      完整性公理 (Completeness)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflexivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      反身性公理 (Reflexivity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      遞移性公理 (Transitivity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monotonicity" class="md-nav__link">
+    <span class="md-ellipsis">
+      單調性公理 (Monotonicity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      凸性公理 (Convexity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      連續性公理 (Continuity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      小結
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="無異曲線">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線的基本特性
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="無異曲線的基本特性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      平面上存在無限多條無異曲線
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      負斜率
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      愈往右上，效用愈高
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      任兩條無異曲線不相交
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線會呈凸向原點
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線形狀與邊際替代率的關係
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      效用函數之單調遞增轉換
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      各類效用函數
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="各類效用函數">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      飽和效用函數
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      完全替代型效用函數
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      完全互補型效用函數
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobb-douglas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cobb-Douglas 效用函數
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cobb-Douglas 效用函數">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      邊際效用可為遞增、固定或遞減
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線凸向原點
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      準線性效用函數
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="準線性效用函數">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線凸向原點
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      邊際替代率僅受一項商品數量影響
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      固定替代彈性效用函數
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="固定替代彈性效用函數">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rho-to-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\rho \to -1\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rho-to-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\rho \to 0\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rho-to-infty" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\rho \to \infty\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stone-geary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stone-Geary 效用函數
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../budget_constraint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 &nbsp; 預算限制式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../optimal_choice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.3 &nbsp; 消費者最適選擇
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      理性行為與選擇公理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="理性行為與選擇公理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#completeness" class="md-nav__link">
+    <span class="md-ellipsis">
+      完整性公理 (Completeness)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflexivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      反身性公理 (Reflexivity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      遞移性公理 (Transitivity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monotonicity" class="md-nav__link">
+    <span class="md-ellipsis">
+      單調性公理 (Monotonicity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      凸性公理 (Convexity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      連續性公理 (Continuity)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      小結
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="無異曲線">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線的基本特性
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="無異曲線的基本特性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      平面上存在無限多條無異曲線
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      負斜率
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      愈往右上，效用愈高
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      任兩條無異曲線不相交
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線會呈凸向原點
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線形狀與邊際替代率的關係
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      效用函數之單調遞增轉換
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      各類效用函數
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="各類效用函數">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      飽和效用函數
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      完全替代型效用函數
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      完全互補型效用函數
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cobb-douglas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cobb-Douglas 效用函數
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cobb-Douglas 效用函數">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      邊際效用可為遞增、固定或遞減
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線凸向原點
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      準線性效用函數
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="準線性效用函數">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      無異曲線凸向原點
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      邊際替代率僅受一項商品數量影響
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      固定替代彈性效用函數
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="固定替代彈性效用函數">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rho-to-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\rho \to -1\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rho-to-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\rho \to 0\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rho-to-infty" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\rho \to \infty\)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stone-geary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stone-Geary 效用函數
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  <div class="md-content" data-md-component="content">
+    <article class="md-content__inner md-typeset">
+      
+        <html><body><h1 id="_1">效用</h1>
+<p>站在手搖飲料店前，你可能會陷入一個熟悉的困境：是選擇平常最愛的珍珠奶茶，還是嘗試新推出的芋泥拿鐵？這個看似簡單的選擇背後，其實涉及了經濟學中最核心的概念之一——<strong>效用</strong>。效用不只是滿足感或快樂程度的抽象表述，它是經濟學家用來理解和預測消費者行為的縝密工具。</p>
+<p>效用的概念源於一個簡單但深刻的觀察：人類永遠渴望更多更好的東西。無論是品嚐美食帶來的愉悅、購買新衣服的興奮、或是學習新知識的充實感，這些主觀體驗雖然因人而異，但都指向同一個事實——我們天生就是慾望無窮的存在。早晨起床後，你可能希望有一杯完美的咖啡；中午用餐時，你渴望品嚐美味的料理；晚上下班後，你想要舒適的休閒娛樂。即使今天的所有願望都得到滿足，明天又會有新的慾望產生。這種永無止境的慾望推動著我們不斷消費、不斷選擇，也推動著整個經濟體系的運行。效用理論的力量在於將這種主觀的、難以衡量的心理感受轉化為可以數學化分析的客觀工具。</p>
+<h2 id="_2">理性行為與選擇公理</h2>
+<p>進行消費者行為分析以前，我們必須有一些假設或公理作為分析準則。這些假設被稱為理性行為 (rational behavior)，即我們假設消費者會在面對特定的預算限制下，選擇具有最大效用的行為，或是當目標確定時，會選擇成本最少的行為方式。經濟學中所謂的「理性」，並非指經濟個體自利 (self-interest) 或是貪婪等情緒層面的特質，而是假設我們有能力認定某一項商品組合是否優於另一項商品組合，進而在偏好顯示下，選擇具有較高效用的組合。</p>
+<p>為了更好分析，通常使用 <span class="arithmatex">\(\succ\)</span> 符號代表我們對某一商品組合嚴格偏好 (strictly prefers) 於另一個商品組合，例如 <span class="arithmatex">\((x_1, y_1) \succ (x_2, y_2)\)</span> 表示 <span class="arithmatex">\((x_1, y_1)\)</span> 組合優於 <span class="arithmatex">\((x_2, y_2)\)</span> 組合。另外若表示兩種商品組合滿足無差異 (indifferent)，例如 <span class="arithmatex">\((x_1, y_1) \sim (x_2, y_2)\)</span>，表示 <span class="arithmatex">\((x_1, y_1)\)</span> 組合主觀上讓消費者的滿足感與 <span class="arithmatex">\((x_2, y_2)\)</span> 組合相同，表示兩商品組合無差異。基於以上偏好關係，我們可以建立一套描述理性偏好的基本公理：</p>
+<h3 id="completeness">完整性公理 (Completeness)</h3>
+<div class="admonition note">
+<p class="admonition-title">完整性公理</p>
+<p>在 <span class="arithmatex">\((P_x^0, P_y^0, M_0)\)</span> 的預算條件下，消費者存在 <span class="arithmatex">\(A(x_0, y_0)\)</span> 與 <span class="arithmatex">\(B(x_1, y_1)\)</span> 兩商品組合可選擇，則必然發生 <span class="arithmatex">\(A \succ B\)</span> 或 <span class="arithmatex">\(B \succ A\)</span> 或 <span class="arithmatex">\(A \sim B\)</span>，三種組合中必只僅有一組會成立，且不可能皆不成立，此稱為完整性公理成立。</p>
+</div>
+<p>亦即消費者可明確判斷商品組合的偏好順序，否則便消費者無法明示偏好順序，則選擇將變得困難且不具完整性公理的假設。</p>
+<p>惟在現實生活中，完整性公理不一定會成立，例如當你是一位美國 MLB 棒球的教練，設 X 為打擊率，Y 為全壘打的數量，你如果面對 A、B 兩個球員且 A 球員為 <span class="arithmatex">\((x_0, y_0) = (0.375, 10)\)</span> 而球員 B 為 <span class="arithmatex">\((x_1, y_1) = (0.250, 50)\)</span>，A 打擊率遠高於 B 表示其上壘次數會比較多，而 B 的全壘打數卻遠高於 A，顯示 B 的關鍵一擊可能會改變戰局，此時你可能會難以選擇。但在序列效用分析過程中，一定要假設完整性公理要成立，否則我們無法進行效用函數與比較分析。</p>
+<h3 id="reflexivity">反身性公理 (Reflexivity)</h3>
+<div class="admonition note">
+<p class="admonition-title">反身性公理</p>
+<p>表示 <span class="arithmatex">\((x_0, y_0) \sim (x_0, y_0)\)</span>，表示對消費者而言，任一 A 商品組合與同一 A 商品組合一樣好，簡單而言，反身性公理就是自己(商品組合)就是自己。</p>
+</div>
+<p>反身性一般皆出現於說明過程，故在本章分析過程中比較少用到。</p>
+<h3 id="transitivity">遞移性公理 (Transitivity)</h3>
+<div class="admonition note">
+<p class="admonition-title">遞移性公理</p>
+<p>在 <span class="arithmatex">\((P_x^0, P_y^0, M_0)\)</span> 的預算條件下，若消費者存在 <span class="arithmatex">\(A(x_0, y_0)\)</span> 與 <span class="arithmatex">\(B(x_1, y_1)\)</span> 與 <span class="arithmatex">\(C(x_2, y_2)\)</span> 三種商品組合可以選擇，則在下任一條件成立時，我們皆稱為 <span class="arithmatex">\(A \succ C\)</span>：</p>
+<ol>
+<li><span class="arithmatex">\(A \succ B\)</span> 且 <span class="arithmatex">\(B \succ C\)</span></li>
+<li><span class="arithmatex">\(A \sim B\)</span> 且 <span class="arithmatex">\(B \succ C\)</span></li>
+<li><span class="arithmatex">\(A \succ B\)</span> 且 <span class="arithmatex">\(B \sim C\)</span></li>
+</ol>
+<p>另外若 <span class="arithmatex">\(A \sim B\)</span> 且 <span class="arithmatex">\(B \sim C\)</span>，則依據遞移性公理則 <span class="arithmatex">\(A \sim C\)</span> 亦會成立。遞移性公理在現實社會裡有時難以成立，但在經濟分析中，如果遞移性公理不成立，即消費者將無法找到最佳選擇。</p>
+</div>
+<p>當我們假設 <span class="arithmatex">\(x \succ y\)</span> 可對應以效用函數 <span class="arithmatex">\(U(x) &gt; U(y)\)</span>，此處 <span class="arithmatex">\(U(\cdot)\)</span> 代表效用函數(水準)。</p>
+<h3 id="monotonicity">單調性公理 (Monotonicity)</h3>
+<div class="admonition note">
+<p class="admonition-title">單調性公理</p>
+<p>如果我們假設所有商品皆為喜好品 (goods)，當消費者所消費的商品數量愈多其效用愈高，即假設滿足單調性公理，亦即單調性公理只要成立，就自動表示消費者之消費行為無飽和點 (non-satiation) 的限制，此處的飽和點是指當消費者消費至某一特定商品組合時，當商品消費提升，反會使得消費者的效用下降，以致於最適存在有飽和點的限制，以利確保在有效的模型框架中仍有較佳的狀況，藉此一商品組合就會被視為最有效的消費狀況。</p>
+<p>以圖形而言，我們通常假設消費者更偏好位於右上方的商品組合。因此，我們通常假設消費者消費的是有利於他們效用增加的商品，而非會降低效用下降的有害品。</p>
+<p>單調性公理是指在 <span class="arithmatex">\((P_x^0, P_y^0, M_0)\)</span> 的條件下，若消費者存在 <span class="arithmatex">\(A(x_0, y_0)\)</span> 與 <span class="arithmatex">\(B(x_1, y_1)\)</span> 兩商品組合可以選擇，則</p>
+<ol>
+<li>當 <span class="arithmatex">\(x_0 &gt; x_1\)</span> 且 <span class="arithmatex">\(y_0 &gt; y_1\)</span> 時；或</li>
+<li>當 <span class="arithmatex">\(x_0 \geq x_1\)</span> 且 <span class="arithmatex">\(y_0 &gt; y_1\)</span> 時；或</li>
+<li>當 <span class="arithmatex">\(x_0 &gt; x_1\)</span> 且 <span class="arithmatex">\(y_0 \geq y_1\)</span> 時</li>
+</ol>
+<p>上述任一條件成立時，皆稱為 <span class="arithmatex">\(A(x_0, y_0) \succ B(x_1, y_1)\)</span>。</p>
+</div>
+<h3 id="convexity">凸性公理 (Convexity)</h3>
+<div class="admonition note">
+<p class="admonition-title">凸性公理</p>
+<p>凸性公理前提為，我們先要介紹凹函數 (concave function) 的觀念。在經濟分析中要討論的凹函數，有單變數函數的凹函數與多變數函數的凹函數。集中在函數 <span class="arithmatex">\(z = f(x)\)</span> 且令 <span class="arithmatex">\(\bar{x} = \theta \cdot x_0 + (1 - \theta) \cdot x_1\)</span>，當 <span class="arithmatex">\(0 &lt; \theta \leq 1\)</span> 時，凹函數的分類如下：</p>
+<ol>
+<li>若 <span class="arithmatex">\(f(\bar{x}) \geq \theta \cdot f(x_0) + (1 - \theta) \cdot f(x_1)\)</span> 成立時，則稱 <span class="arithmatex">\(z\)</span> 為<strong>凹函數</strong> (concave function)</li>
+<li>若 <span class="arithmatex">\(f(\bar{x}) &gt; \theta \cdot f(x_0) + (1 - \theta) \cdot f(x_1)\)</span> 成立時，則稱 <span class="arithmatex">\(z\)</span> 為<strong>嚴格凹函數</strong> (strictly concave function)</li>
+<li>若 <span class="arithmatex">\(f(\bar{x}) \leq \theta \cdot f(x_0) + (1 - \theta) \cdot f(x_1)\)</span> 成立時，則稱 <span class="arithmatex">\(z\)</span> 為<strong>弱凹函數</strong> (weakly concave function)</li>
+<li>若 <span class="arithmatex">\(f(\bar{x}) = \theta \cdot f(x_0) + (1 - \theta) \cdot f(x_1)\)</span> 成立時，則稱 <span class="arithmatex">\(z\)</span> 為<strong>準凹函數</strong></li>
+</ol>
+<p>故當加權的函數值大於函數值的加權時，此即為凹函數。</p>
+</div>
+<p>另一種判斷函數是否具有凸性或是否為凹函數的方法，可將兩商品組合的連線 (加權平均商品組合) 視其是否完全落於弱偏好集合之中，如下圖中 A 我們稱為凹函數或稱為具有凸性 (convex)，圖 B 亦為凹函數，圖 C 則稱其函數為凸函數 (convex function) 或稱為具有凹性 (concave)。</p>
+<h3 id="continuity">連續性公理 (Continuity)</h3>
+<div class="admonition note">
+<p class="admonition-title">連續性公理</p>
+<p>在經濟學所研究的商品，事實上大都難以細微分割，但表示於圖形上，會導致線條非曲線，因此為方便起見，以連續性假設商品可以任意分割。</p>
+</div>
+<p>連續性公理確保了效用函數的數學性質，使我們能夠使用微積分工具進行分析。在現實中，許多商品確實是離散的 (如汽車、房屋)，但連續性假設簡化了分析過程，且在大部分情況下不會顯著影響結論的有效性。</p>
+<h3 id="_3">小結</h3>
+<p>上述五個公理共同構成了消費者理性行為的基礎假設。完整性與遞移性確保偏好排序的邏輯一致性，反身性提供基本的邏輯起點，單調性反映了「多即是好」的基本假設，而凸性則隱含了邊際效用遞減和風險趨避的行為特徵。連續性公理則為數學分析提供了技術基礎。</p>
+<p>透過這些公理的建立，我們能夠將主觀的消費者偏好轉化為客觀的數學表達，為後續的效用函數建構和最適化分析奠定堅實的理論基礎。</p>
+<h2 id="_4">無異曲線</h2>
+<p>無異曲線 (indifferent curve) 的定義為，在其他情況 (價格) 不變，清費者消費 <span class="arithmatex">\(x\)</span> 及 <span class="arithmatex">\(y\)</span> 兩商品 (亦可推廣至多種商品)，在維持其效用水準不變下，兩種商品間可以互換的效用水準為為某一特定常數，我們以下表的五種 <span class="arithmatex">\((x, y)\)</span> 組合來說明：若 <span class="arithmatex">\(x, y\)</span> 兩商品皆為喜喜好品，表中所列的商品組合 <span class="arithmatex">\((x, y) = (1, 12)\)</span>、此組合與 <span class="arithmatex">\((2, 8)\)</span>、<span class="arithmatex">\((3, 5)\)</span>、<span class="arithmatex">\((4, 3)\)</span> 與 <span class="arithmatex">\((5, 2)\)</span> ，當該給消費者具有相同 <span class="arithmatex">\(U_0\)</span> 水準的滿足感，則將這些組合表示於座標上所形成的曲線，稱為無異曲線。</p>
+<table>
+<thead>
+<tr>
+<th>組合</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x\)</span></td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(y\)</span></td>
+<td>12</td>
+<td>8</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>上圖中的無異曲線，在利用連續性假設後，一般我們將無異曲線畫成圖形的曲線，在同一條無異曲線上的各種商品組合，皆代表對消費者而言相同的一特定水準上所有構其為無異曲線類型 <span class="arithmatex">\(U_0\)</span>；圖形上的 F 點商品組合 <span class="arithmatex">\((x, y) = (3, 8)\)</span> 依照單調性公理其效用必滿足 <span class="arithmatex">\((2, 8)\)</span> 與 <span class="arithmatex">\((3, 5)\)</span> 兩商品組合，因此通過 <span class="arithmatex">\((3, 8)\)</span> 而且與 <span class="arithmatex">\((3, 5)\)</span> 具有相同效用水準 <span class="arithmatex">\(U_1\)</span> 的無異曲線可能如圖中紅色線條所示。在滿足之前所談有關描述偏好的行為公理，在 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 兩商品皆為喜好品的假設下，則無異曲線的特性有：</p>
+<h3 id="_5">無異曲線的基本特性</h3>
+<h4 id="_6">平面上存在無限多條無異曲線</h4>
+<p>如上圖所示，紅色線條與藍色線條分別可再分出效用值介於 <span class="arithmatex">\(U_0\)</span> 與 <span class="arithmatex">\(U_1\)</span> 的無異曲線，因此平面上存在無限多條表達出各種不同效用值的無異曲線。</p>
+<h4 id="_7">負斜率</h4>
+<p>當兩商品皆為喜好品時，為了維持效用水準固定不變，增加一商品的消費必須減少另一商品的消費，即依據單調性公理兩種商品都同時增加或減少，因此無異理，消費者的效用水準必定也同時上升或下降，而無法維持效用無異。因此無異曲線為負斜率。</p>
+<div class="admonition note">
+<p class="admonition-title">邊際替代率</p>
+<p><strong>邊際替代率</strong> (marginal rate of substitution, MRS) 指在兩種財貨組合 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 及保持效用不變的條件下，消費者每得到額外一單位 <span class="arithmatex">\(x\)</span> 之後要而必須放棄 <span class="arithmatex">\(y\)</span> 的數量，以 <span class="arithmatex">\(MRS_{xy}\)</span> 表示，其計算方式為：
+$$
+MRS_{xy} = -\dfrac{dy}{dx}\bigg|_{\bar{U}}
+$$
+其中下標 <span class="arithmatex">\(\bar{U}\)</span> 表示效用維持固定。</p>
+</div>
+<p>利用效用函數 <span class="arithmatex">\(U = U(x, y)\)</span>，對其全微分得：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;\;dU = 0 = \frac{\partial U}{\partial x} \cdot dx + \frac{\partial U}{\partial y} \cdot dy\\
+\Rightarrow\;&amp; 0 = MU_x \cdot dx + MU_y \cdot dy\\
+\Rightarrow\;&amp; \frac{dy}{dx} = \frac{MU_x}{MU_y} = MRS_{xy}
+\end{aligned}
+\]</div>
+<p>其中 <span class="arithmatex">\(dU = 0\)</span> 的原因在於求無異曲線的 <span class="arithmatex">\(MRS_{xy}\)</span> 必須是效用水準的變動值為零。由上得知，<span class="arithmatex">\(MRS_{xy}\)</span> 為兩商品消費至最後一單位時的邊際效用函數值相除。邊際替代率 <span class="arithmatex">\(MRS_{xy}\)</span> 的用途，為可搭配效用函數來點出無異曲線的形狀，底下舉例說明。</p>
+<div class="admonition question">
+<p class="admonition-title">無異曲線斜率計算</p>
+<p>設效用函數為 <span class="arithmatex">\(U(x, y) = x^2 y^2\)</span>，則其無異曲線的形狀為何？</p>
+</div>
+<h4 id="_8">愈往右上，效用愈高</h4>
+<p>若 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 兩商品皆為喜好品，則單調性公理將保證愈往右上方向，<span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 的商品數量愈多效用愈高，愈往左下方向表示 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 商品偏好愈高的方向，且 <span class="arithmatex">\(U_1\)</span> 大於 <span class="arithmatex">\(U_0\)</span>。</p>
+<p><figure id="_figure-1"><a class="glightbox" href="../images/%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8%E8%B6%8A%E5%BE%80%E5%8F%B3%E4%B8%8A%E6%95%88%E7%94%A8%E8%B6%8A%E9%AB%98.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="效用函數越往右上效用越高" src="../images/%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8%E8%B6%8A%E5%BE%80%E5%8F%B3%E4%B8%8A%E6%95%88%E7%94%A8%E8%B6%8A%E9%AB%98.png" width="350"></a><figcaption>圖 1： 效用函數越往右上效用越高</figcaption></figure></p>
+<h4 id="_9">任兩條無異曲線不相交<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></h4>
+<p>設無異曲線可以相交，如下圖中之 <span class="arithmatex">\(U_0\)</span> 與 <span class="arithmatex">\(U_1\)</span>。假設 A 點與 B 點位於同一無異曲線 <span class="arithmatex">\(U_0\)</span> 上，所以 A 點與 B 點的效用無異，且 A 點與 C 點位於同一無異曲線 <span class="arithmatex">\(U_1\)</span> 上，所以 A 點與 C 點的效用無異。</p>
+<p>利用遞移性公理，B 點的 <span class="arithmatex">\(x\)</span> 數量大於 C 點的 <span class="arithmatex">\(x\)</span> 數量一樣，且 B 點的 <span class="arithmatex">\(y\)</span> 數量會大於 C 點的 <span class="arithmatex">\(y\)</span> 數量，可知 B 點效用會大於 C 點。</p>
+<p><figure id="_figure-2"><a class="glightbox" href="../images/%E5%85%A9%E6%A2%9D%E7%84%A1%E7%95%B0%E6%9B%B2%E7%B7%9A%E4%B8%8D%E7%9B%B8%E4%BA%A4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="任兩條無異曲線不相交" src="../images/%E5%85%A9%E6%A2%9D%E7%84%A1%E7%95%B0%E6%9B%B2%E7%B7%9A%E4%B8%8D%E7%9B%B8%E4%BA%A4.png" width="350"></a><figcaption>圖 2： 任兩條無異曲線不相交</figcaption></figure></p>
+<p>圖形中顯示，B 點的 <span class="arithmatex">\(x\)</span> 數量大於 C 點的 <span class="arithmatex">\(x\)</span> 數量，且 B 點的 <span class="arithmatex">\(y\)</span> 數量大於 C 點的 <span class="arithmatex">\(y\)</span> 數量，因此利用單調性公理，我們有 B 點比 C 點的效用一致，產生矛盾，代表原假設有誤，故任兩條無異曲線不可相交。</p>
+<h4 id="_10">無異曲線會呈凸向原點</h4>
+<p>無異曲線會呈凸向原點的特性，是由於邊際效用遞減法則所致。</p>
+<div class="admonition note">
+<p class="admonition-title">邊際效用遞減法則</p>
+<p><strong>邊際效用遞減法則</strong>係指在一般情況下，消費者為維持一定的效用水準，以某一特定 <span class="arithmatex">\(x\)</span> 商品來替換 <span class="arithmatex">\(y\)</span> 商品，通常會隨著 <span class="arithmatex">\(x\)</span> 商品的數量增加，所願意犧牲的 <span class="arithmatex">\(y\)</span> 商品數量會隨之減少。</p>
+</div>
+<p>下圖中由 A 點到 B 點，當消費者多消費一單位 <span class="arithmatex">\(x\)</span> 商品，此時在維持 <span class="arithmatex">\(U_0\)</span> 效用水準下，消費者必須犧牲 <span class="arithmatex">\(\Delta y_1\)</span> 的 <span class="arithmatex">\(y\)</span> 商品數量，而當消費者再次增加一單位 <span class="arithmatex">\(x\)</span> 商品的消費 (B 點到 C 點)，此次 <span class="arithmatex">\(x\)</span> 商品的消費所帶給消費者的邊際效用將不若前一單位 <span class="arithmatex">\(x\)</span> 商品的邊際效用，因此在維持 <span class="arithmatex">\(U_0\)</span> 效用水準下，消費者此次僅需犧牲較少的 <span class="arithmatex">\(y\)</span> 商品數量可，意味著 <span class="arithmatex">\(\Delta y_2\)</span> 必小於 <span class="arithmatex">\(\Delta y_1\)</span> 的 <span class="arithmatex">\(y\)</span> 商品數量。此會會導致隨著 <span class="arithmatex">\(x\)</span> 商品數量愈多效用下降，此會會導致邊際替代率 <span class="arithmatex">\(MRS_{xy}\)</span> 遞減，而呈現無異曲線會呈現凸向原點的特性，此時就導致邊際替代率遞減法則 (the law of diminishing <span class="arithmatex">\(MRS_{xy}\)</span>)。無異曲線會具有凸向原點的特性，此時就導致邊際替代率遞減法則成立的結果。</p>
+<p><figure id="_figure-3"><a class="glightbox" href="../images/%E7%84%A1%E7%95%B0%E6%9B%B2%E7%B7%9A%E6%9C%83%E5%87%B8%E5%90%91%E5%8E%9F%E9%BB%9E.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="無異曲線會凸向原點" src="../images/%E7%84%A1%E7%95%B0%E6%9B%B2%E7%B7%9A%E6%9C%83%E5%87%B8%E5%90%91%E5%8E%9F%E9%BB%9E.png" width="350"></a><figcaption>圖 3： 無異曲線會凸向原點</figcaption></figure></p>
+<div class="admonition question">
+<p class="admonition-title">邊際效用遞減與邊際替代率遞減</p>
+<p>是否當所有商品的邊際效用遞減法則皆成立時，會隱含無異曲線的邊際替代率遞減法則亦會成立？如果設效用函數為
+<span class="arithmatex">\(U = U(x,y)\)</span> 且滿足 <span class="arithmatex">\(U_x &gt; 0\)</span>、<span class="arithmatex">\(U_{xx} &lt; 0\)</span>、<span class="arithmatex">\(U_y &gt; 0\)</span>、<span class="arithmatex">\(U_{yy} &lt; 0\)</span>，亦即 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 商品皆為
+喜好商品且邊際效用皆隨消費量增加而遞減，另無異曲線的斜率可表達為</p>
+<div class="arithmatex">\[
+\frac{dY}{dX} = -\frac{MU_x}{MU_y} = -\frac{U_x}{U_y}，其中
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+U_x &amp;= U_x(x,y) = \frac{\partial U}{\partial x} = MU_x(x,y) &gt; 0, U_{xx} = \frac{\partial U_x}{\partial x} = \frac{\partial MU_x}{\partial x} &lt; 0\\
+U_y &amp;= U_y(x,y) = \frac{\partial U}{\partial y} = MU_y(x,y) &gt; 0, U_{yy} = \frac{\partial U_y}{\partial y} = \frac{\partial MU_y}{\partial y} &lt; 0
+\end{aligned}
+\]</div>
+<p>且 <span class="arithmatex">\(MRS_{xy} = -\frac{dY}{dX} = \frac{U_x}{U_y} = \frac{U_x(x,Y(x))}{U_y(x,Y(x))}\)</span>。
+若隨著 <span class="arithmatex">\(x\)</span> 商品消費量增加，<span class="arithmatex">\(MRS_{xy}\)</span> 會隨之下降，則表示邊際替代率遞減法
+則成立，以數學表達即為 <span class="arithmatex">\(\frac{dMRS_{xy}}{dx} &lt; 0\)</span>，底下證明此式的成立條件：
+$$
+\begin{aligned}
+\frac{dMRS_{xy}}{dx} &amp;= \frac{d}{dx}\left(\frac{U_x}{U_y}\right) = \frac{1}{U_y^2}\left[U_{xx} + U_{xy}\left(\frac{dY}{dX}\right)\right] \cdot U_y - \left[U_{yx} + U_{yy}\left(\frac{dY}{dX}\right)\right] \cdot U_x\\
+&amp;= \frac{1}{U_y^2}\left[U_{xx} + U_{xy}\left(-\frac{U_x}{U_y}\right)\right] \cdot U_y - \left[U_{yx} + U_{yy}\left(-\frac{U_x}{U_y}\right)\right] \cdot U_x\\
+&amp;= \frac{1}{U_y^2}\left{U_{xx} \cdot U_y - U_{xy} \cdot U_x - U_{yx} \cdot U_x + U_{yy} \cdot \frac{U_x^2}{U_y}\right}\\
+&amp;= \frac{1}{U_y^3}\left{U_{xx} \cdot U_y^2 - 2 \cdot U_{xy} \cdot U_x \cdot U_y + U_{yy} \cdot U_x^2\right}
+\end{aligned}
+$$</p>
+<p>利用 Young's theorem 得知 <span class="arithmatex">\(U_{xy} = U_{yx}\)</span>，故上式可改為</p>
+<div class="arithmatex">\[
+= \frac{1}{U_y^3}\left\{U_{xx} \cdot U_y^2 - 2 \cdot U_{xy} \cdot U_x \cdot U_y + U_{yy} \cdot U_x^2\right\} &lt; 0
+\]</div>
+<p>上式中 <span class="arithmatex">\(U_y^3 &gt; 0\)</span>，所以 <span class="arithmatex">\(\frac{dMRS_{xy}}{dx} &lt; 0\)</span> 隱含 <span class="arithmatex">\(U_{xx} \cdot U_y^2 - 2 \cdot U_{xy} \cdot U_x \cdot U_y + U_{yy} \cdot U_x^2 &lt; 0\)</span></p>
+<p>必須要成立，若商品邊際效用遞減法則成立，則 <span class="arithmatex">\(U_{xx} \cdot U_y^2 &lt; 0\)</span> 且 <span class="arithmatex">\(U_{yy} \cdot U_x^2 &lt; 0\)</span></p>
+<p>但因為 <span class="arithmatex">\(U_{xy}\)</span> 的正負符號不確定，故無法確認 <span class="arithmatex">\(\frac{dMRS_{xy}}{dx} &lt; 0\)</span>，例如當 <span class="arithmatex">\(U_{xy} &lt; 0\)</span>，即所</p>
+<ul>
+<li>
+<p>當 <span class="arithmatex">\(U_{xy} &gt; 0\)</span>，亦即 <span class="arithmatex">\(U_{xy} = \frac{dU_x}{dY} &gt; 0\)</span>，表示消費者多消費一單位的 <span class="arithmatex">\(Y\)</span> 商品，此
+時 <span class="arithmatex">\(x\)</span> 商品的邊際效用會提升，隨含 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(Y\)</span> 商品具有效用上的互補關係，故在 <span class="arithmatex">\(x\)</span>
+與 <span class="arithmatex">\(Y\)</span> 商品具有效用上的互補關係時，兩商品邊際效用遞減法則成立即隱含邊際替
+代率遞減法則亦成立。</p>
+</li>
+<li>
+<p>當 <span class="arithmatex">\(U_{xy} &lt; 0\)</span>，亦即 <span class="arithmatex">\(U_{xy} = \frac{dU_x}{dY} &lt; 0\)</span>，表示消費者多消費一單位的 <span class="arithmatex">\(Y\)</span> 商品，此
+時 <span class="arithmatex">\(x\)</span> 商品的邊際效用會下降，隨含 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(Y\)</span> 商品具有效用上的替代關係，故在 <span class="arithmatex">\(x\)</span>
+與 <span class="arithmatex">\(Y\)</span> 商品具有效用上的替代關係時，兩商品邊際效用遞減法則成立即隱含邊際替
+代率遞減法則亦成立。</p>
+</li>
+</ul>
+</div>
+<h2 id="_11">無異曲線形狀與邊際替代率的關係</h2>
+<p>若 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(Y\)</span> 兩商品皆為喜好商品，則無異曲線的形狀與邊際替代率的變動關係
+如下圖所示：</p>
+<p>當 <span class="arithmatex">\(\frac{dMRS_{xy}}{dx} &lt; 0\)</span> 時，表示在商品邊際效用遞減法則成立的條件下，並不代
+表邊際替代率一定會呈現遞減的形式，亦即邊際效用遞減與邊際替代率遞減法
+則，兩者之間並不具有互相隱含的關係。</p>
+<ul>
+<li><strong><span class="arithmatex">\(\frac{dMRS_{xy}}{dx} &lt; 0\)</span></strong>：無異曲線呈現凸向原點的形狀</li>
+<li><strong><span class="arithmatex">\(\frac{dMRS_{xy}}{dx} = 0\)</span></strong>：無異曲線呈現直線的形狀</li>
+<li><strong><span class="arithmatex">\(\frac{dMRS_{xy}}{dx} &gt; 0\)</span></strong>：無異曲線呈現凹向原點的形狀</li>
+</ul>
+<p>若 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 兩商品皆為喜好品，則無異曲線的形狀與邊際替代率的變動關係如下圖所示：</p>
+<p><figure id="_figure-4"><a class="glightbox" href="../images/%E9%82%8A%E9%9A%9B%E6%9B%BF%E4%BB%A3%E7%8E%87%E8%88%87%E7%84%A1%E7%95%B0%E6%9B%B2%E7%B7%9A%E5%BD%A2%E7%8B%80.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="邊際替代率與無異曲線形狀" src="../images/%E9%82%8A%E9%9A%9B%E6%9B%BF%E4%BB%A3%E7%8E%87%E8%88%87%E7%84%A1%E7%95%B0%E6%9B%B2%E7%B7%9A%E5%BD%A2%E7%8B%80.png" width="650"></a><figcaption>圖 4： 邊際替代率與無異曲線形狀</figcaption></figure></p>
+<ul>
+<li>左圖：邊際替代率呈現遞減，亦即 <span class="arithmatex">\(\frac{dMRS_{xy}}{dx} &lt; 0\)</span> 成立。</li>
+<li>中圖：邊際替代率呈現固定，亦即 <span class="arithmatex">\(\frac{dMRS_{xy}}{dx} = 0\)</span> 成立。</li>
+<li>右圖：邊際替代率呈現遞增，亦即 <span class="arithmatex">\(\frac{dMRS_{xy}}{dx} &gt; 0\)</span> 成立。</li>
+</ul>
+<h2 id="_12">效用函數之單調遞增轉換</h2>
+<p>序列效用分析仍延續計數效用分析中之效用函數水準的偏好，在計數效用分析中的效用水準有一意義，例如當我們說效用水準為 10 util 與 20 util 可將後者的滿足感是前者滿足感的兩倍，效用水準的數字本身有絕對的觀念。</p>
+<p>但在序列效用分析之中，用以代表效用水準的函數中皆為相對對照 (relative magnitude) 的觀念，就像是我們在測量溫度時，可採用攝氏 (Celsius) 或華氏 (Fahrenheit) 來量，0<span class="arithmatex">\(^{\circ}\)</span>C 等於 32<span class="arithmatex">\(^{\circ}\)</span>F，100<span class="arithmatex">\(^{\circ}\)</span>C 等於 212<span class="arithmatex">\(^{\circ}\)</span>F，亦好像我們在測量距離時，可採用公尺 (meters) 或英尺 (feet) 來衡量。效用水準就像上述的相對量一樣，不同的衡量基準會導致數字不同，這也不影響函數本身具有相同間好的消費者。你現在有多快樂？乙回答：「我現在很有幸福快樂。」甲回答：「乙會回答：『我現在在萬分快樂。』」其中的甲的『十分』與乙的『萬分』，其實可能表達出一樣的滿足感。這隱含不同的效用函數可能可以表達出相同的價好水準，但其順序不同的效用水準的數字不同。</p>
+<div class="admonition note">
+<p class="admonition-title">單調轉換</p>
+<p><strong>單調轉換</strong> (monotonic transformation)，代表隨著不同的效用函數之效用值之間具有正/負相關。設效用函數 <span class="arithmatex">\(U = U(x, y)\)</span>，則存在另一效用函數 <span class="arithmatex">\(V = f(U) = f[U(x, y)]\)</span>。</p>
+<ul>
+<li>若 <span class="arithmatex">\(\frac{dV}{dU} = f^{\prime}(U) &gt; 0\)</span>，稱 <span class="arithmatex">\(V\)</span> 為 <span class="arithmatex">\(U\)</span> 之<strong>單調遞增轉換</strong> (monotonic increasing transformation)。亦即兩個函數之間若互為單調遞增轉換時，則兩函數的無異曲線形狀會相同，但偏好方向相同，但相同商品組合的效用值不會相同。</li>
+<li>若 <span class="arithmatex">\(\frac{dV}{dU} = f^{\prime}(U) &lt; 0\)</span>，稱 <span class="arithmatex">\(V\)</span> 為 <span class="arithmatex">\(U\)</span> 之<strong>單調遞減轉換</strong> (monotonic decreasing transformation)，亦即兩個函數之間若互為單調遞減轉換時，則兩函數的無異曲線形狀會相同，但偏好方向相反，但相同商品組合的效用值不會相同。</li>
+</ul>
+</div>
+<p>假設現存在消費者 A，其效用函數為 <span class="arithmatex">\(U = xy\)</span>，由 <span class="arithmatex">\(MU_x = \frac{\partial U}{\partial x} = y\)</span>，<span class="arithmatex">\(MU_y = \frac{\partial U}{\partial y} = x\)</span>，可得 <span class="arithmatex">\(MRS_{xy} = \frac{MU_x}{MU_y} = \frac{y}{x}\)</span>，亦隱含無異曲線的斜率為 <span class="arithmatex">\(\frac{dy}{dx} = -\frac{y}{x}\)</span>。再配合效用函數 <span class="arithmatex">\(U = xy\)</span>，我們可以畫出無異曲線的形狀為</p>
+<p><figure id="_figure-5"><a class="glightbox" href="../images/%E5%96%AE%E8%AA%BF%E9%81%9E%E5%A2%9E%E8%BD%89%E6%8F%9B%E6%B6%88%E8%B2%BB%E8%80%85A.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="單調遞增轉換消費者A" src="../images/%E5%96%AE%E8%AA%BF%E9%81%9E%E5%A2%9E%E8%BD%89%E6%8F%9B%E6%B6%88%E8%B2%BB%E8%80%85A.png" width="350"></a><figcaption>圖 5： 單調遞增轉換消費者A</figcaption></figure></p>
+<p>若存在另一消費者 B，其效用函數為 <span class="arithmatex">\(V = 2xy\)</span>，由 <span class="arithmatex">\(MU_x = \frac{\partial V}{\partial x} = 2y\)</span>，<span class="arithmatex">\(MU_y = \frac{\partial V}{\partial y} = 2x\)</span>，可得 <span class="arithmatex">\(MRS_{xy} = \frac{MU_x}{MU_y} = \frac{y}{x}\)</span>，亦隱含無異曲線的斜率為 <span class="arithmatex">\(\frac{dy}{dx} = -\frac{y}{x}\)</span>。再配合效用函數 <span class="arithmatex">\(V = 2xy\)</span>，我們可以畫出無異曲線的形狀為</p>
+<p><figure id="_figure-6"><a class="glightbox" href="../images/%E5%96%AE%E8%AA%BF%E9%81%9E%E5%A2%9E%E8%BD%89%E6%8F%9B%E6%B6%88%E8%B2%BB%E8%80%85B.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="單調遞增轉換消費者B" src="../images/%E5%96%AE%E8%AA%BF%E9%81%9E%E5%A2%9E%E8%BD%89%E6%8F%9B%E6%B6%88%E8%B2%BB%E8%80%85B.png" width="350"></a><figcaption>圖 6： 單調遞增轉換消費者B</figcaption></figure></p>
+<p>若存在一消費者 C，其效用函數為 <span class="arithmatex">\(w = \frac{1}{xy}\)</span>，由 <span class="arithmatex">\(MU_x = \frac{\partial w}{\partial x} = \frac{-1}{x^2y}\)</span>，<span class="arithmatex">\(MU_y = \frac{\partial w}{\partial y} = \frac{-1}{xy^2}\)</span>，可得 <span class="arithmatex">\(MRS_{xy} = \frac{MU_x}{MU_y} = \frac{y}{x}\)</span>，亦隱含無異曲線的斜率為 <span class="arithmatex">\(\frac{dy}{dx} = -\frac{y}{x}\)</span>。再配合效用函數 <span class="arithmatex">\(w = \frac{1}{xy}\)</span>，我們可以畫出無異曲線的形狀為</p>
+<p><figure id="_figure-7"><a class="glightbox" href="../images/%E5%96%AE%E8%AA%BF%E9%81%9E%E5%A2%9E%E8%BD%89%E6%8F%9B%E6%B6%88%E8%B2%BB%E8%80%85C.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="單調遞增轉換消費者C" src="../images/%E5%96%AE%E8%AA%BF%E9%81%9E%E5%A2%9E%E8%BD%89%E6%8F%9B%E6%B6%88%E8%B2%BB%E8%80%85C.png" width="350"></a><figcaption>圖 7： 單調遞增轉換消費者C</figcaption></figure></p>
+<p>我們可以發現三位消費者的無異曲線群完全相同，僅效用水準值有異，因此三者的效用函數互為彼此的單調遞增轉換。如下表所示，前述 A、B 與 C 三位消費者，在不同消費組合下的效用水準如下：</p>
+<table>
+<thead>
+<tr>
+<th>商品組合 <span class="arithmatex">\((x, y)\)</span></th>
+<th>A的效用水準</th>
+<th>B的效用水準</th>
+<th>C的效用水準</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\((x, y) = (1, 1)\)</span></td>
+<td><span class="arithmatex">\(U_1 = 1\)</span> util</td>
+<td><span class="arithmatex">\(V_1 = 2\)</span> util</td>
+<td><span class="arithmatex">\(W_1 = 1\)</span> util</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x, y) = (2, 2)\)</span></td>
+<td><span class="arithmatex">\(U_2 = 4\)</span> util</td>
+<td><span class="arithmatex">\(V_2 = 8\)</span> util</td>
+<td><span class="arithmatex">\(W_2 = 1/4\)</span> util</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x, y) = (3, 3)\)</span></td>
+<td><span class="arithmatex">\(U_3 = 9\)</span> util</td>
+<td><span class="arithmatex">\(V_3 = 18\)</span> util</td>
+<td><span class="arithmatex">\(W_3 = 1/9\)</span> util</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition question">
+<p class="admonition-title">單調遞增轉換函數</p>
+<p>下列那些效用函數為效用函數 <span class="arithmatex">\(U(x, y) = xy\)</span> 的單調遞增轉換函數？</p>
+<ol>
+<li><span class="arithmatex">\(V(x, y) = 2xy\)</span></li>
+<li><span class="arithmatex">\(W(x, y) = \frac{1}{xy}\)</span></li>
+<li><span class="arithmatex">\(Z(x, y) = xy + 10\)</span></li>
+<li><span class="arithmatex">\(A(x, y) = xy - 10\)</span></li>
+<li><span class="arithmatex">\(B(x, y) = 10 - xy\)</span></li>
+<li><span class="arithmatex">\(C(x, y) = x^2y^2\)</span></li>
+<li><span class="arithmatex">\(D(x, y) = x^{\frac{1}{2}}y^{\frac{1}{2}}\)</span></li>
+<li><span class="arithmatex">\(E(x, y) = \ln(xy)\)</span></li>
+<li><span class="arithmatex">\(F(x, y) = x^3y^3\)</span></li>
+<li><span class="arithmatex">\(H(x, y) = \ln x + \ln y\)</span></li>
+</ol>
+</div>
+<table none="" id="_table-1">
+<caption>Table 1: 原效用函數、單調遞增轉換的函數與單調遞減轉換函數之間的關係</caption><thead>
+<tr>
+<th>與原效用函數比較</th>
+<th>單調遞增轉換</th>
+<th>單調遞減轉換</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>效用函數</td>
+<td>不同</td>
+<td>不同</td>
+</tr>
+<tr>
+<td>邊際效用函數</td>
+<td>不同</td>
+<td>不同</td>
+</tr>
+<tr>
+<td>邊際替代率函數</td>
+<td>相同</td>
+<td>相同</td>
+</tr>
+<tr>
+<td>無異曲線的形狀</td>
+<td>相同</td>
+<td>相同</td>
+</tr>
+<tr>
+<td>偏好方向</td>
+<td>相同</td>
+<td>相反</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">齊序函數</p>
+<p>若效用函數 <span class="arithmatex">\(U = U(x, y)\)</span> 為一階齊次函數，則效用函數透過單調遞增轉換所構成的效用函數版稱為齊序函數 (homothetic function)。</p>
+<p>當效用函數 <span class="arithmatex">\(U = U(x, y)\)</span> 具有一階齊次的數的特性時，則表示下式會成立：
+$$
+\lambda U = U(\lambda x, \lambda y)
+$$</p>
+</div>
+<p>令 <span class="arithmatex">\(\lambda = \frac{1}{x}\)</span>，可得 <span class="arithmatex">\(\frac{U}{x} = U\left(1, \frac{y}{x}\right)\)</span>，或可整理為 <span class="arithmatex">\(U = x \cdot u\left(\frac{y}{x}\right)\)</span>，則我們可計算出</p>
+<div class="arithmatex">\[
+\begin{aligned}
+MU_x &amp;= \frac{\partial U}{\partial x} = u\left(\frac{y}{x}\right) + u^{\prime}\left(\frac{y}{x}\right) \cdot \frac{-y}{x^2} \cdot x = u\left(\frac{y}{x}\right) \cdot \frac{y}{x} \cdot u^{\prime}\left(\frac{y}{x}\right)\\
+MU_y &amp;= \frac{\partial U}{\partial y} = x \cdot u^{\prime}\left(\frac{y}{x}\right) \cdot \frac{1}{x} = u^{\prime}\left(\frac{y}{x}\right)
+\end{aligned}
+\]</div>
+<p>故可得 <span class="arithmatex">\(MRS_{xy} = \frac{MU_x}{MU_y} = \frac{u\left(\frac{y}{x}\right) \cdot \frac{y}{x} \cdot u^{\prime}\left(\frac{y}{x}\right)}{u^{\prime}\left(\frac{y}{x}\right)} = f\left(\frac{y}{x}\right)\)</span>，此顯示效用函數具有一階齊次的特性時，在相同射線下的不同無異曲線，其 <span class="arithmatex">\(MRS_{xy}\)</span> 數值會相同的特性。</p>
+<p>求算單調遞增轉換之齊序效用函數 <span class="arithmatex">\(V = F(U) = F[U(x, y)]\)</span> 的 <span class="arithmatex">\(MRS_{xy}\)</span> 函數，則</p>
+<div class="arithmatex">\[
+MRS_V = \frac{f^{\prime} \frac{\partial U}{\partial x}}{f^{\prime} \frac{\partial U}{\partial y}} = \frac{\frac{\partial U}{\partial x}}{\frac{\partial U}{\partial y}} = \frac{MU_x}{MU_y} = MRS_U\]</div>
+<p>我們會發現其 <span class="arithmatex">\(MRS_{xy}\)</span> 與原效用函數相同，故亦表示齊序效用函數亦具有在相同射線下的不同無異曲線，其 <span class="arithmatex">\(MRS_{xy}\)</span> 數值會相同的特性。</p>
+<h2 id="_13">各類效用函數</h2>
+<p>在現實生活中，不同消費者面對商品選擇時展現出截然不同的偏好模式：有些人認為咖啡與茶完全可以互相替代，有些人則堅持左腳穿左鞋、右腳穿右鞋的固定搭配。
+看似個人化的消費習慣，實際上反映了深層的偏好結構差異。經濟學透過構建不同類型的效用函數來精確刻畫這些偏好特徵，每一種效用函數都是理解特定消費行為的數學工具，為消費者理論提供了豐富的分析框架，並奠定後續消費者選擇之理論基礎。</p>
+<h3 id="_14">飽和效用函數</h3>
+<p>當消費者對 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 兩商品的消費組合為 <span class="arithmatex">\((x_0, y_0)\)</span> 時的效用達到極大。</p>
+<ul>
+<li>
+<p>當任一商品消費數量小於 <span class="arithmatex">\(x_0\)</span> 或 <span class="arithmatex">\(y_0\)</span> 時，商品均為喜好品，表示此時若增加任一商品的消費數量皆會增加效用。</p>
+</li>
+<li>
+<p>當任一商品消費數量大於 <span class="arithmatex">\(x_0\)</span> 或 <span class="arithmatex">\(y_0\)</span> 時，商品均為厭惡品，表示此時若增加任一商品的消費數量皆會減少效用。</p>
+</li>
+</ul>
+<p>此時稱 <span class="arithmatex">\((x_0, y_0)\)</span> 為<strong>極樂點</strong> (bliss point) 或是<strong>飽和點</strong> (satiation point)，效用函數表示為：
+$$
+U(x, y) = c - a(x - x_{0})^{2} - b(y - y_{0})^{2}, \quad a, b, c \in \mathbb{R}^{+}
+$$
+效用函數圖形如下圖所示：</p>
+<p><figure id="_figure-8"><a class="glightbox" href="../images/%E9%A3%BD%E5%92%8C%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="飽和效用函數" src="../images/%E9%A3%BD%E5%92%8C%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" width="350"></a><figcaption>圖 8： 飽和效用函數</figcaption></figure></p>
+<h3 id="_15">完全替代型效用函數</h3>
+<p>描述<strong>完全替代</strong> (perfect substitutes) 型之偏好的效用函數可以用下式表達：
+$$
+U(x, y) = ax + by
+$$
+其中 <span class="arithmatex">\(a\)</span>、<span class="arithmatex">\(b\)</span> 為大於零的常數。假設效用水準不變，且固定為常數 <span class="arithmatex">\(c\)</span>，則</p>
+<ul>
+<li>當 <span class="arithmatex">\(x = 0\)</span> 時，<span class="arithmatex">\(y = \frac{c}{b}\)</span></li>
+<li>當 <span class="arithmatex">\(y = 0\)</span> 時，<span class="arithmatex">\(y = \frac{c}{a}\)</span></li>
+</ul>
+<p><figure id="_figure-9"><a class="glightbox" href="../images/%E5%AE%8C%E5%85%A8%E6%9B%BF%E4%BB%A3%E5%9E%8B%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="完全替代型效用函數" src="../images/%E5%AE%8C%E5%85%A8%E6%9B%BF%E4%BB%A3%E5%9E%8B%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" width="350"></a><figcaption>圖 9： 完全替代型效用函數</figcaption></figure></p>
+<p>由圖可以看出，完全替代型效用函數為一直線，故又稱為<strong>線性</strong> (linear) 效用函數。經過簡單計算後，可得完全替代型效用函數之邊際替代率為
+$$
+MRS_{xy} = \dfrac{a}{b}
+$$
+邊際替代率為常數，不符合邊際替代率遞減法則。注意到以下效用函數均為效用函數 <span class="arithmatex">\(U(x, y) = ax + by\)</span> 之單調遞增轉換函數，可自行驗證。</p>
+<ul>
+<li><span class="arithmatex">\(V(x, y) = \sqrt{ax + by}\)</span></li>
+<li><span class="arithmatex">\(W(x, y) = ax + by - k\)</span></li>
+<li><span class="arithmatex">\(Z(x, y) = a^{2}x^{2} + 2abxy + b^{2}y^{2}\)</span></li>
+</ul>
+<h3 id="_16">完全互補型效用函數</h3>
+<p>若消費者偏好特殊，喜歡依特定比例搭配 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 商品，則稱其偏好為<strong>完全互補型</strong> (perfect complement)。以數學式表達如下：
+$$
+U(x, y) = \min{ax, by}
+$$
+上式效用函數中的 <span class="arithmatex">\(a\)</span>、<span class="arithmatex">\(b\)</span> 為正的常數，其中 <span class="arithmatex">\(\min\)</span> 的意義為選取括號中兩數較小者為效用值。例如商品組合 <span class="arithmatex">\((10, 10)\)</span>、<span class="arithmatex">\((10, 11)\)</span> 與 <span class="arithmatex">\((11, 10)\)</span> 皆帶給消費者同樣為 10 util 的效用水準。或者換句話說，當 <span class="arithmatex">\(x = 10\)</span> 且 <span class="arithmatex">\(y \geq 10\)</span> 或 <span class="arithmatex">\(y = 10\)</span> 且 <span class="arithmatex">\(x \geq 10\)</span> 時，無論另一項商品數量為何，均不影響效用值。</p>
+<p>如下圖所示，此種消費偏好型態必須滿足 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 兩商品為特定數量比例消費，超過的部分如圖中所示之垂直或水平線段，不會再增加消費者的效用水準。此外，<strong>拗折點</strong> (kinky point) 必出現在 <span class="arithmatex">\(ax = by\)</span> 或是 <span class="arithmatex">\(\frac{y}{x} = \frac{a}{b}\)</span> 之射線上。 </p>
+<p><figure id="_figure-10"><a class="glightbox" href="../images/%E5%AE%8C%E5%85%A8%E4%BA%92%E8%A3%9C%E5%9E%8B%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="完全互補型效用函數" src="../images/%E5%AE%8C%E5%85%A8%E4%BA%92%E8%A3%9C%E5%9E%8B%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" width="350"></a><figcaption>圖 10： 完全互補型效用函數</figcaption></figure></p>
+<p>注意到此種偏好型態之邊際替代率不存在，原因在於拗折點的切線斜率可以為任意數值，或由數學觀點而言，拗折點「不可微分」。</p>
+<p>以下效用函數均為效用函數 <span class="arithmatex">\(U(x, y) = \min\{ax, by\}\)</span> 之單調遞增轉換函數：</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(V(x, y) = k \cdot \min\{ax, by\}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(W(x, y) = k \cdot \min\{x, \frac{b}{a}y\}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(Z(x, y) = \ln \min\{ax, by\}\)</span></p>
+</li>
+</ul>
+<h3 id="cobb-douglas">Cobb-Douglas 效用函數</h3>
+<p>Cobb-Douglas 效用函數為經濟學中最常見的效用函數之一，其具有良好的特性。利用數學函數表達 Cobb-Douglas 效用函數圖形如下圖所示：
+$$
+U(x, y) = Ax^{\alpha}y^{\beta}
+$$
+其中 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(\alpha\)</span> 與 <span class="arithmatex">\(\beta\)</span> 均為正的常數，<span class="arithmatex">\(A\)</span> 稱為<strong>效用因子</strong> (utility factor)。經過簡單的計算，可以得到 Cobb-Douglas 效用函數的邊際替代率為
+$$
+MRS_{xy} = \dfrac{\alpha}{\beta}\cdot \dfrac{y}{x}
+$$
+根據 Cobb-Douglas 效用函數之邊際替代率可得以下特性：</p>
+<h4 id="_17">邊際效用可為遞增、固定或遞減</h4>
+<p>由兩商品的邊際效用與效用函數對該商品之二次微分：
+$$
+\begin{aligned}
+U_{x} &amp;= \alpha A x^{\alpha - 1}y^{\beta}, U_{xx} = \alpha (\alpha - 1) x^{\alpha - 2}y^{\beta}\\
+U_{y} &amp;= \beta A x^{\alpha}y^{\beta - 1}, U_{yy} = \beta (\beta - 1) x^{\alpha}y^{\beta - 2}
+\end{aligned}
+$$
+可得以下情況：</p>
+<ul>
+<li>當 <span class="arithmatex">\(\alpha &gt; 1\)</span> (<span class="arithmatex">\(\beta &gt; 1\)</span>) 時，則 <span class="arithmatex">\(U_{xx} &gt; 0\)</span> (<span class="arithmatex">\(U_{yy} &gt; 0\)</span>)，隱含邊際效用遞增。</li>
+<li>當 <span class="arithmatex">\(\alpha = 1\)</span> (<span class="arithmatex">\(\beta = 1\)</span>) 時，則 <span class="arithmatex">\(U_{xx} = 0\)</span> (<span class="arithmatex">\(U_{yy} = 0\)</span>)，隱含邊際效用固定。</li>
+<li>當 <span class="arithmatex">\(\alpha &lt; 1\)</span> (<span class="arithmatex">\(\beta &lt; 1\)</span>) 時，則 <span class="arithmatex">\(U_{xx} &lt; 0\)</span> (<span class="arithmatex">\(U_{yy} &lt; 0\)</span>)，隱含邊際效用遞減。</li>
+</ul>
+<h4 id="_18">無異曲線凸向原點<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></h4>
+<p>以 <span class="arithmatex">\(x\)</span> 商品為例，將邊際替代率對 <span class="arithmatex">\(x\)</span> 進行微分後，可得
+$$
+\begin{aligned}
+\dfrac{dMRS_{xy}}{dx} &amp;= \dfrac{\alpha}{\beta} \cdot \dfrac{\dfrac{dy}{dx}\cdot x - y}{x^2}\\
+&amp;= \dfrac{\alpha}{\beta} \cdot \dfrac{- \dfrac{\alpha}{\beta}\dfrac{y}{x}\cdot x - y}{x^2}\\
+&amp;= - \dfrac{\alpha}{\beta} \cdot \dfrac{\left(1 + \dfrac{\alpha}{\beta}\right)y}{x^2} &lt; 0
+\end{aligned}
+$$</p>
+<p>即可知無異曲線凸向原點。</p>
+<p>無論 <span class="arithmatex">\(x\)</span> 商品與 <span class="arithmatex">\(y\)</span> 商品的邊際效用呈現遞增、固定或遞減，邊際替代率皆會</p>
+<p>以下效用函數均為效用函數 <span class="arithmatex">\(U(x, y) = Ax^{\alpha}y^{\beta}\)</span> 之單調遞增轉換函數：</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(V(x, y) = x^{\frac{\alpha}{\alpha + \beta}} \cdot x^{\frac{\beta}{\alpha + \beta}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(W(x, y) = \ln(x^{\alpha}y^{\beta})\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(Z(x, y) = \alpha \ln x + \beta \ln y\)</span></p>
+</li>
+</ul>
+<h3 id="_19">準線性效用函數</h3>
+<p><strong>準線性效用函數</strong> (quasi-linear utility function) 可以表達如下：
+$$
+U(x, y) = f(x) + y \quad \text{或} \quad U(x, y) = x + f(y)
+$$
+以前者說明，其中 <span class="arithmatex">\(f^{\prime} &gt; 0\)</span> 且 <span class="arithmatex">\(f^{\prime\prime} &lt; 0\)</span>。一般常見形式有：</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(U(x, y) = \ln x + y\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(U(x, y) = \sqrt{x} + y\)</span></p>
+</li>
+</ul>
+<p>準線性效用函數的邊際替代率為 <span class="arithmatex">\(f^{\prime}\)</span> 之值，因此有以下特性：</p>
+<h4 id="_20">無異曲線凸向原點</h4>
+<p>由邊際替代率以及二階微分可得證，請自行證明。</p>
+<h4 id="_21">邊際替代率僅受一項商品數量影響</h4>
+<p>已知準線性效用函數之邊際替代率如下：
+$$
+MRS_{xy} = f^{\prime}(x)
+$$
+顯示僅受到 <span class="arithmatex">\(x\)</span> 商品數量的影響，不受 <span class="arithmatex">\(y\)</span> 商品數量影響。因此當 <span class="arithmatex">\(x\)</span> 商品數量固定時，所有無異曲線的邊際替代率均相同，如下圖所示：</p>
+<p><figure id="_figure-11"><a class="glightbox" href="../images/%E6%BA%96%E7%B7%9A%E6%80%A7%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="準線性效用函數" src="../images/%E6%BA%96%E7%B7%9A%E6%80%A7%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" width="350"></a><figcaption>圖 11： 準線性效用函數</figcaption></figure></p>
+<h3 id="_22">固定替代彈性效用函數</h3>
+<p><strong>固定替代彈性效用函數</strong> (constant elasticity of substitution utility function, CES utility function) 是暨 Cobb-Douglas 效用函數，另一個常見的效用函數形式，其效用函數形如：</p>
+<div class="arithmatex">\[
+U(x, y) = A \cdot \left[\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}\right]^{-\frac{1}{\rho}}
+\]</div>
+<p>上式中的 <span class="arithmatex">\(A &gt; 0\)</span>，<span class="arithmatex">\(\delta \in [0, 1]\)</span>，<span class="arithmatex">\(-1 &lt; \rho \neq 0\)</span>，其中 <span class="arithmatex">\(A\)</span> 為效用因子 (與 Cobb-Douglas 效用函數的相同)，<span class="arithmatex">\(\delta\)</span> 為<strong>分配因子</strong> (distribution parameter)，<span class="arithmatex">\(\rho\)</span> 則是<strong>替代因子</strong> (substitution parameter)。由上式可求算出 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 兩商品的邊際效用為：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+MU_{x} &amp;= A \cdot \left(- \dfrac{1}{\rho}\right) \left[\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}\right]^{-\frac{1}{\rho} - 1} \cdot \delta \cdot (-\rho) \cdot x^{-\rho - 1}\\\\
+MU_{y} &amp;= A \cdot \left(- \dfrac{1}{\rho}\right) \left[\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}\right]^{-\frac{1}{\rho} - 1} \cdot (1-\delta) \cdot (-\rho) \cdot y^{-\rho - 1}
+\end{aligned}
+\]</div>
+<p>因此由邊際效用可求算固定替代彈性效用函數之邊際替代率為</p>
+<div class="arithmatex">\[
+MRS_{xy} = \dfrac{\delta}{1 - \delta} \cdot \left(\dfrac{y}{x}\right)^{1 + \rho}
+\]</div>
+<p>固定替代彈性效用函數的一項特性是，當替代因子 <span class="arithmatex">\(\rho\)</span> 大小不同時，會轉變成前述已知的效用函數形式。</p>
+<h4 id="rho-to-1"><span class="arithmatex">\(\rho \to -1\)</span></h4>
+<p>當 <span class="arithmatex">\(\rho \to -1\)</span> 時，CES 效用函數轉變為完全替代型效用函數或稱線性效用函數。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\lim_{\rho \to -1} U(x, y) &amp;= \lim_{\rho \to -1} A \cdot \left[\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}\right]^{-\frac{1}{\rho}}\\\\
+&amp;= \lim_{\rho \to -1} A \cdot \left[\delta \cdot x^{-(-1)} + (1 - \delta) y^{-(-1)}\right]^{-\frac{1}{-1}}\\\\
+&amp;= \lim_{\rho \to -1} A \cdot \left[\delta \cdot x + (1 - \delta) y\right]^{1}\\
+&amp;= A \cdot [\delta \cdot x + (1 - \delta) y]
+\end{aligned}
+\]</div>
+<h4 id="rho-to-0"><span class="arithmatex">\(\rho \to 0\)</span></h4>
+<p>當 <span class="arithmatex">\(\rho \to 0\)</span> 時，CES 效用函數轉變為 <strong>Cobb-Douglas 效用函數</strong>。令：</p>
+<div class="arithmatex">\[
+f(\rho) = -\frac{1}{\rho} \ln\left[\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}\right]
+\]</div>
+<p>則原效用函數可寫為 <span class="arithmatex">\(U(x, y) = A \cdot e^{f(\rho)}\)</span>，當 <span class="arithmatex">\(\rho \to 0\)</span> 時：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\lim_{\rho \to 0} f(\rho) &amp;= \lim_{\rho \to 0} \frac{-\ln\left[\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}\right]}{\rho}
+\end{aligned}
+\]</div>
+<p>由於分子分母均趨於 0，使用 L'Hôpital 法則：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+&amp;= \lim_{\rho \to 0} \frac{-\frac{d}{d\rho}\ln\left[\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}\right]}{1}\\\\
+&amp;= \lim_{\rho \to 0} \frac{-\frac{\delta \cdot x^{-\rho}(-\ln x) + (1-\delta) \cdot y^{-\rho}(-\ln y)}{\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}}}{1}\\\\
+&amp;= \lim_{\rho \to 0} \frac{\delta \cdot x^{-\rho} \ln x + (1-\delta) \cdot y^{-\rho} \ln y}{\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}}\\\\
+&amp;= \frac{\delta \ln x + (1-\delta) \ln y}{\delta + (1-\delta)}\\\\
+&amp;= \delta \ln x + (1-\delta) \ln y\\\\
+&amp;= \ln(x^\delta y^{1-\delta})
+\end{aligned}
+\]</div>
+<p>因此：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\lim_{\rho \to 0} U(x, y) &amp;= A \cdot e^{\ln(x^\delta y^{1-\delta})}\\
+&amp;= A \cdot x^\delta y^{1-\delta}
+\end{aligned}
+\]</div>
+<p>此即為 Cobb-Douglas 效用函數，表示兩商品具有<strong>單位替代彈性</strong>。</p>
+<h4 id="rho-to-infty"><span class="arithmatex">\(\rho \to \infty\)</span></h4>
+<p>當 <span class="arithmatex">\(\rho \to \infty\)</span> 時，CES 效用函數轉變為完全互補型效用函數。當 <span class="arithmatex">\(\rho \to \infty\)</span> 時，考慮 <span class="arithmatex">\(x^{-\rho}\)</span> 和 <span class="arithmatex">\(y^{-\rho}\)</span> 的行為：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\lim_{\rho \to \infty} \left[\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}\right]^{-\frac{1}{\rho}}
+\end{aligned}
+\]</div>
+<p><strong>不失一般性</strong> (without loss of generality, WLOG)，假設 <span class="arithmatex">\(x &lt; y\)</span>，則當 <span class="arithmatex">\(\rho \to \infty\)</span> 時，<span class="arithmatex">\(x^{-\rho} \to \infty\)</span> 且 <span class="arithmatex">\(y^{-\rho} \to 0\)</span>。因為 <span class="arithmatex">\(x^{-\rho}\)</span> 項會主導整個括號內的表達式，所以：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\lim_{\rho \to \infty} \left[\delta \cdot x^{-\rho} + (1 - \delta) y^{-\rho}\right]^{-\frac{1}{\rho}} &amp;= \lim_{\rho \to \infty} \left[\delta \cdot x^{-\rho}\right]^{-\frac{1}{\rho}}\\
+&amp;= \lim_{\rho \to \infty} \delta^{-\frac{1}{\rho}} \cdot x\\
+&amp;= 1 \cdot x = x
+\end{aligned}
+\]</div>
+<p>類似地，若 <span class="arithmatex">\(y &lt; x\)</span>，則極限為 <span class="arithmatex">\(y\)</span>。因此，當 <span class="arithmatex">\(\rho \to \infty\)</span> 時：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\lim_{\rho \to \infty} U(x, y) &amp;= A \cdot \min\{x, y\}
+\end{aligned}
+\]</div>
+<p>此即為 Leontief 效用函數，表示兩商品為完全互補品，消費者總是以固定比例消費兩商品。</p>
+<h3 id="stone-geary">Stone-Geary 效用函數</h3>
+<p><strong>Stone-Geary 效用函數</strong> 的函數型態為
+$$
+U(x, y) = (x - x_0)^{\alpha} (y - y_0)^{\beta}
+$$
+式中的 <span class="arithmatex">\((x_0, y_0)\)</span> 可視為消費者維持基本生活的消費商品組合，且消費者對於 <span class="arithmatex">\(x\)</span> 或 <span class="arithmatex">\(y\)</span> 商品的消費數量必須超過基本水準方能獲得正效用。經過計算，可得 Stone-Geary 效用函數的邊際替代率為
+$$
+MRS_{xy} = \dfrac{\alpha}{\beta} \cdot \dfrac{y - y_{0}}{x - x_{0}}
+$$</p>
+<p><figure id="_figure-12"><a class="glightbox" href="../images/Stone-Geary%20%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Stone-Geary效用函數" src="../images/Stone-Geary%20%E6%95%88%E7%94%A8%E5%87%BD%E6%95%B8.png" width="350"></a><figcaption>圖 12： Stone-Geary效用函數</figcaption></figure></p>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>任兩條無異曲線不可相交，是同一人且在同一時期的無異曲線不可相交。但是針對不同人之間的無異曲線，或同一人但不同時期的無異曲線則可以相交。 <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>在證明邊際替代率是否遞減時，必須將其中一項商品視為另一項商品的函數，而不能將其視為常數。原因是：當某一商品的數量發生變動時，整體商品組合也隨之改變；若錯誤地將另一商品視為常數，則無法正確反映邊際替代率隨商品組合變動而調整的特性。因此下述證明是錯誤的，請牢記於心：
+$$
+\dfrac{dMRS_{xy}}{dx} = \dfrac{\alpha}{\beta} \cdot \dfrac{0 \cdot x - y}{x^2} = - \dfrac{\alpha}{\beta} \cdot \dfrac{y}{x^2} &lt; 0
+$$ <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
+</div><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body></html>
+      
+      
+      
+        <hr class="hr">
+<div id="comments" class="md-typeset">
+  <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+  <hyvor-talk-comments
+    website-id="13970"
+    page-id="./"
+    page-url="None"
+  ></hyvor-talk-comments>
+</div>
+      
+    </article>
+  </div>
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Index
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../budget_constraint/" class="md-footer__link md-footer__link--next" aria-label="Next: 4.2 &amp;nbsp; 預算限制式">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                4.2 &nbsp; 預算限制式
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce", "announce.dismiss", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+        <script src="../../js/quiz.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

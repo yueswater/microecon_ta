@@ -1,0 +1,1833 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../budget_constraint/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>4.3   消費者最適選擇 - 個體經濟學</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans TC";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+              <button class="md-banner__button md-icon" aria-label="Don't show this again">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+              </button>
+            
+            
+  📢 本課程的助教課時間將於九月初公布，請同學隨時注意網站更新。
+
+          </div>
+          
+            <script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))</script>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="個體經濟學" class="md-header__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            個體經濟學
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              4.3 &nbsp; 消費者最適選擇
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue"  aria-label="切換深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切換深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="light-blue"  aria-label="切換淺色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切換淺色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="zh-Hant" class="md-select__link">
+              繁體中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yueswater/microecon_ta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yueswater/microecon_ta
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="個體經濟學" class="md-nav__button md-logo" aria-label="個體經濟學" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    個體經濟學
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yueswater/microecon_ta" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yueswater/microecon_ta
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ch0/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 0 章 &nbsp; 個體經濟學數學基礎
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            第 0 章 &nbsp; 個體經濟學數學基礎
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.1 &nbsp; 函數
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/limit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.2 &nbsp; 極限與連續性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.3 &nbsp; 微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.4 &nbsp; 積分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/partial_diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.5 &nbsp; 偏微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/total_diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.6 &nbsp; 全微分
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/taylor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.7 &nbsp; 泰勒級數與泰勒展開
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/simul_eqs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.8 &nbsp; 聯立方程式的求解
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.9 &nbsp; 最適化
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch0/pv_fv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    0.10 &nbsp; 現值與未來值
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ch1/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 1 章 &nbsp; 需求與供給
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            第 1 章 &nbsp; 需求與供給
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch1/demand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.1 &nbsp; 需求
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch1/supply/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.2 &nbsp; 供給
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch1/market/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1.3 &nbsp; 均衡分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ch2/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 2 章 &nbsp; 彈性
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            第 2 章 &nbsp; 彈性
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch2/price_elasticity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 &nbsp; 價格彈性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch2/cross_and_income_elasticity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 &nbsp; 交叉彈性與所得彈性
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch2/elasticity_application/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 &nbsp; 彈性應用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ch3/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 3 章 &nbsp; 供需模型應用
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            第 3 章 &nbsp; 供需模型應用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch3/price_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.1 &nbsp; 限價政策
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch3/quantity_control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.2 &nbsp; 限量政策
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch3/tax/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.3 &nbsp; 課稅政策
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ch3/subsidy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.4 &nbsp; 補貼政策
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    第 4 章 &nbsp; 消費者理論
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            第 4 章 &nbsp; 消費者理論
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../utility/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.1 &nbsp; 效用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../budget_constraint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.2 &nbsp; 預算限制式
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4.3 &nbsp; 消費者最適選擇
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4.3 &nbsp; 消費者最適選擇
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      最適化問題
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      圖解分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="圖解分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      邊界解的情形
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      內點解的條件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      拉格朗日乘數法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拉格朗日乘數法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-order-conditions-focs" class="md-nav__link">
+    <span class="md-ellipsis">
+      一階條件 (First-Order Conditions, FOCs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second-order-conditions-socs" class="md-nav__link">
+    <span class="md-ellipsis">
+      二階條件 (Second-Order Conditions, SOCs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二階條件 (Second-Order Conditions, SOCs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      二階條件的經濟意義
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      檢驗二階條件的實際步驟
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      二階條件失效的情況
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      拉格朗日乘數的經濟意義
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      最適化問題
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      圖解分析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="圖解分析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      邊界解的情形
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      內點解的條件
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      拉格朗日乘數法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="拉格朗日乘數法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#first-order-conditions-focs" class="md-nav__link">
+    <span class="md-ellipsis">
+      一階條件 (First-Order Conditions, FOCs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#second-order-conditions-socs" class="md-nav__link">
+    <span class="md-ellipsis">
+      二階條件 (Second-Order Conditions, SOCs)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二階條件 (Second-Order Conditions, SOCs)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      二階條件的經濟意義
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      檢驗二階條件的實際步驟
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      二階條件失效的情況
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      拉格朗日乘數的經濟意義
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  <div class="md-content" data-md-component="content">
+    <article class="md-content__inner md-typeset">
+      
+        <html><body><h1 id="_1">消費者最適選擇</h1>
+<p>當消費者手握有限的預算，面對商品架上琳瑯滿目的選擇時，如何在預算限制下做出最理性的決策？這個問題的核心在於找到無差異曲線與預算限制線的最適切點。在經濟學中，消費者最適選擇問題可視為一個約束最適化問題：在預算限制的約束條件下，尋求效用函數的最大值。
+這個看似抽象的數學問題，實際上精確地刻畫了日常生活中每一次消費決策的理性邏輯。透過拉格朗日乘數法等數學工具，我們能夠將主觀的消費偏好與客觀的市場約束整合為一套完整的分析框架，不僅能夠預測消費者行為，更能深入理解價格機制如何引導資源的有效配置。</p>
+<h2 id="_2">最適化問題</h2>
+<p>消費者最適選擇問題的本質是一個約束最適化問題，這類問題在經濟學分析中具有核心地位。消費者作為理性的經濟個體，必須在有限資源的約束下做出選擇，以實現其效用的最大化。</p>
+<p>設消費者的效用函數為 <span class="arithmatex">\(U(x, y)\)</span>，捕捉了消費者對不同商品組合的偏好排序。消費者面臨預算限制 <span class="arithmatex">\(p_x x + p_y y = M\)</span>，其中 <span class="arithmatex">\(p_x\)</span>、<span class="arithmatex">\(p_y\)</span> 分別為商品 <span class="arithmatex">\(x\)</span>、<span class="arithmatex">\(y\)</span> 的市場價格，<span class="arithmatex">\(M\)</span> 為消費者的名目所得。
+消費者的決策目標是在既定的預算限制下，選擇最適的商品組合 <span class="arithmatex">\((x^*, y^*)\)</span> 以最大化其效用水準。此過程涉及在可行集合中尋找最優解，其中可行集合由預算限制和非負約束條件共同定義。非負約束條件 <span class="arithmatex">\(x \geq 0, y \geq 0\)</span> 反映了現實中消費數量不能為負數的物理限制。</p>
+<p>從數學角度而言，此最適化問題可以形式化表述為：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\max_{x,y} \quad &amp; U(x, y)\\
+\text{s.t.} \quad &amp; p_x x + p_y y = M\\
+&amp; x \geq 0, y \geq 0
+\end{aligned}
+\]</div>
+<h2 id="_3">圖解分析</h2>
+<p>從圖形角度來看，消費者最適選擇問題可以透過無差異曲線與預算限制線的幾何關係來直觀理解。這種圖解方法不僅提供了數學解的視覺化呈現，更重要的是揭示了最適化條件背後的經濟直觀。</p>
+<p>消費者的最適選擇通常出現在無差異曲線與預算限制線的切點。在此切點處，兩條曲線具有相同的斜率，這意味著無差異曲線的斜率等於預算限制線的斜率。數學上，這個條件可以表述為：</p>
+<div class="arithmatex">\[
+MRS_{xy} = \frac{p_x}{p_y}
+\]</div>
+<p><figure id="_figure-1"><a class="glightbox" href="../images/%E6%B6%88%E8%B2%BB%E8%80%85%E6%9C%80%E9%81%A9%E9%81%B8%E6%93%87.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="消費者最適選擇" src="../images/%E6%B6%88%E8%B2%BB%E8%80%85%E6%9C%80%E9%81%A9%E9%81%B8%E6%93%87.png" width="350"></a><figcaption>圖 1： 消費者最適選擇</figcaption></figure></p>
+<p>此切點條件具有深刻的經濟含義：邊際替代率 <span class="arithmatex">\(MRS_{xy}\)</span> 反映了消費者的<strong>主觀評價</strong>：為了多獲得一單位商品 <span class="arithmatex">\(x\)</span>，消費者願意放棄多少單位的商品 <span class="arithmatex">\(y\)</span>，同時保持效用水準不變。而價格比 <span class="arithmatex">\(\frac{p_x}{p_y}\)</span> 則反映了市場的<strong>客觀交換比例</strong>：在市場上用一單位商品 <span class="arithmatex">\(x\)</span> 可以換取多少單位商品 <span class="arithmatex">\(y\)</span>。
+換言之，消費者在最適點處，其主觀的商品替代率 (邊際替代率) 必須等於市場的客觀替代率 (價格比) 。若此條件不滿足，消費者可透過調整商品組合來提高效用水準。</p>
+<p>當 <span class="arithmatex">\(MRS_{xy} = \frac{p_x}{p_y}\)</span> 時，消費者的主觀評價與市場的客觀交換比例達成一致，此時已無法透過調整消費組合來進一步提升效用。若這個等式不成立，消費者就有動機改變其消費組合：</p>
+<ul>
+<li><strong>當 <span class="arithmatex">\(MRS_{xy} &gt; \frac{p_x}{p_y}\)</span> 時</strong>：消費者對商品 <span class="arithmatex">\(x\)</span> 的主觀評價高於市場價格，應該增加 <span class="arithmatex">\(x\)</span> 的消費，減少 <span class="arithmatex">\(y\)</span> 的消費</li>
+<li><strong>當 <span class="arithmatex">\(MRS_{xy} &lt; \frac{p_x}{p_y}\)</span> 時</strong>：消費者對商品 <span class="arithmatex">\(x\)</span> 的主觀評價低於市場價格，應該減少 <span class="arithmatex">\(x\)</span> 的消費，增加 <span class="arithmatex">\(y\)</span> 的消費</li>
+</ul>
+<p>綜上，從圖形上觀之，最適點必須滿足以下條件：</p>
+<ul>
+<li><strong>可行性條件</strong>：該點必須位於或內於預算限制線所界定的可行集合內</li>
+<li><strong>最適性條件</strong>：在所有可行點中，該點必須位於最高的無差異曲線上</li>
+<li><strong>切點條件</strong>：當最適解為內點解時，無差異曲線與預算線必須相切</li>
+</ul>
+<p>值得注意的是，切點條件僅適用於內點解的情況。當最適解出現在預算線的端點時 (即消費者完全不消費某種商品) ，我們得到的是邊界解，此時切點條件不再適用。</p>
+<h3 id="_4">邊界解的情形</h3>
+<p>當最適解出現在預算線的端點時 (即 <span class="arithmatex">\(x^* = 0\)</span> 或 <span class="arithmatex">\(y^* = 0\)</span>) ，稱為<strong>邊界解</strong> (corner solution) 或<strong>角解</strong>。此時 <span class="arithmatex">\(MRS_{xy} \neq \frac{p_x}{p_y}\)</span>，消費者完全不消費其中一種商品。邊界解通常出現在：</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">角解—全買 X</label><label for="__tabbed_1_2">角解—全買 Y</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure id="_figure-2"><a class="glightbox" href="../images/%E8%A7%92%E8%A7%A3%E2%80%94%E5%85%A8%E8%B2%B7%20X.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="角解—全買 X" src="../images/%E8%A7%92%E8%A7%A3%E2%80%94%E5%85%A8%E8%B2%B7%20X.png" width="350"></a><figcaption>圖 2： 角解—全買 X</figcaption></figure></p>
+</div>
+<div class="tabbed-block">
+<p><figure id="_figure-3"><a class="glightbox" href="../images/%E8%A7%92%E8%A7%A3%E2%80%94%E5%85%A8%E8%B2%B7%20Y.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="角解—全買 Y" src="../images/%E8%A7%92%E8%A7%A3%E2%80%94%E5%85%A8%E8%B2%B7%20Y.png" width="350"></a><figcaption>圖 3： 角解—全買 Y</figcaption></figure></p>
+</div>
+</div>
+</div>
+<p>邊界解通常出現在以下情況：</p>
+<ul>
+<li>
+<p><strong>商品間替代性很高的情況 (如完全替代品) </strong>：當兩種商品可以完全相互替代時，消費者會根據相對價格選擇成本較低的商品。若 <span class="arithmatex">\(\frac{MU_x}{MU_y} &gt; \frac{p_x}{p_y}\)</span>，消費者會全部購買商品 <span class="arithmatex">\(x\)</span>；反之則全部購買商品 <span class="arithmatex">\(y\)</span>。完全替代型效用函數是這種情況的典型例子。</p>
+</li>
+<li>
+<p><strong>某商品價格相對過高</strong>：即使兩商品具有一定的互補性，當其中一種商品的價格過於昂貴時，消費者可能會選擇完全放棄該商品。這種情況在奢侈品市場中較為常見，例如當珠寶價格過高時，一般消費者可能完全不購買珠寶，而將所得全部用於其他必需品。</p>
+</li>
+<li>
+<p><strong>消費者對某商品的偏好極低</strong>：某些商品可能與消費者的個人偏好、文化背景或價值觀不符，導致消費者對該商品的邊際效用極低。在這種情況下，即使價格不高，消費者仍可能選擇完全不消費該商品。</p>
+</li>
+</ul>
+<h3 id="_5">內點解的條件</h3>
+<p>當最適解滿足 <span class="arithmatex">\(x^* &gt; 0\)</span> 且 <span class="arithmatex">\(y^* &gt; 0\)</span> 時，稱為<strong>內點解</strong> (interior solution)。內點解的一階必要條件為：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\dfrac{\partial U}{\partial x} &amp;= \lambda p_x\\
+\dfrac{\partial U}{\partial y} &amp;= \lambda p_y\\
+p_x x + p_y y &amp;= M
+\end{aligned}
+\]</div>
+<p>其中 <span class="arithmatex">\(\lambda &gt; 0\)</span> 為拉格朗日乘數，具有重要的經濟意義：它表示額外一單位所得能帶來的邊際效用增加量，即<strong>所得的邊際效用</strong> (marginal utility of income)。</p>
+<p>由前兩個條件可得：</p>
+<div class="arithmatex">\[
+\dfrac{\dfrac{\partial U}{\partial x}}{\dfrac{\partial U}{\partial y}} = \dfrac{MU_x}{MU_y} = MRS_{xy} = \dfrac{p_x}{p_y}
+\]</div>
+<p><figure id="_figure-4"><a class="glightbox" href="../images/%E5%85%A7%E9%BB%9E%E8%A7%A3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="內點解圖示" src="../images/%E5%85%A7%E9%BB%9E%E8%A7%A3.png" width="350"></a><figcaption>圖 4： 內點解圖示</figcaption></figure></p>
+<p>內點解的另一個重要特徵是其對參數變化的敏感性。與邊界解不同，內點解通常對價格和所得的小幅變化都會產生連續的反應。
+從政策分析的角度來看，內點解的消費者通常對價格變化更敏感，因為他們同時購買多種商品，價格變化會透過替代效應和所得效應同時影響其消費決策。</p>
+<h2 id="_6">拉格朗日乘數法</h2>
+<p><strong>拉格朗日乘數法</strong> (Lagrangian 乘數法) 是解決約束最適化問題的標準數學工具。對於消費者選擇問題，我們構造拉格朗日函數：</p>
+<div class="arithmatex">\[
+\mathcal{L}(x, y, \lambda) = U(x, y) - \lambda(p_x x + p_y y - M)
+\]</div>
+<p>其中 <span class="arithmatex">\(\lambda\)</span> 為拉格朗日乘數，代表約束條件的<strong>影子價格</strong> (shadow price)。</p>
+<h4 id="first-order-conditions-focs">一階條件 (First-Order Conditions, FOCs)</h4>
+<p>對拉格朗日函數分別對 <span class="arithmatex">\(x\)</span>、<span class="arithmatex">\(y\)</span> 和 <span class="arithmatex">\(\lambda\)</span> 求偏微分並令其等於零：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\dfrac{\partial \mathcal{L}}{\partial x} &amp;= \dfrac{\partial U}{\partial x} - \lambda p_x = 0 \quad \Rightarrow \quad MU_x = \lambda p_x\\\\
+\dfrac{\partial \mathcal{L}}{\partial y} &amp;= \dfrac{\partial U}{\partial y} - \lambda p_y = 0 \quad \Rightarrow \quad MU_y = \lambda p_y\\\\
+\dfrac{\partial \mathcal{L}}{\partial \lambda} &amp;= -(p_x x + p_y y - M) = 0 \quad \Rightarrow \quad p_x x + p_y y = M
+\end{aligned}
+\]</div>
+<p>從前兩個條件可以得到：</p>
+<div class="arithmatex">\[
+\dfrac{MU_x}{p_x} = \dfrac{MU_y}{p_y} = \lambda
+\]</div>
+<p>這個條件被稱為<strong>等邊際原理</strong> (equimarginal principle)：在最適選擇下，消費者花在每種商品上的最後一元錢所帶來的邊際效用必須相等。若此條件不滿足，消費者可透過重新分配支出來提高總效用。</p>
+<h3 id="second-order-conditions-socs">二階條件 (Second-Order Conditions, SOCs)</h3>
+<p>為確保求得的是最大值而非最小值，必須檢驗二階條件。二階條件是約束最適化問題中的關鍵步驟，因為一階條件只能確保我們找到了駐點 (stationary point) ，但無法保證該駐點是最大值、最小值還是鞍點 (saddle point) 。</p>
+<p>在約束最適化問題中，我們需要使用<strong>有界 Hessian 矩陣</strong> (bordered Hessian matrix) 來檢驗二階條件。對於消費者選擇問題，有界 Hessian 矩陣的構造如下：</p>
+<div class="arithmatex">\[
+\bar{H} = \begin{bmatrix}
+0 &amp; -p_x &amp; -p_y \\\\
+-p_x &amp; U_{xx} &amp; U_{xy}\\\\
+-p_y &amp; U_{yx} &amp; U_{yy}
+\end{bmatrix}
+\]</div>
+<p>其中：</p>
+<ul>
+<li><strong>左上角的零</strong>：反映了約束條件本身不含二階項</li>
+<li><strong>第一行和第一列的價格項</strong>：來自預算約束的係數 <span class="arithmatex">\(-p_x\)</span> 和 <span class="arithmatex">\(-p_y\)</span></li>
+<li><strong>右下角的 <span class="arithmatex">\(2 \times 2\)</span> 子矩陣</strong>：包含效用函數的所有二階偏微分，即無約束 Hessian 矩陣</li>
+</ul>
+<p>為了確保最適解是最大值，我們需要檢驗有界 Hessian 矩陣的<strong>行列式</strong> (determinant) 的符號。對於最大化問題，二階條件要求： <span class="arithmatex">\(\det(\bar{H}) &lt; 0\)</span>。逐步計算這個行列式，使用第一行展開，可得到：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\det(\bar{H}) &amp;= 0 \cdot \begin{vmatrix} U_{xx} &amp; U_{xy} \\ U_{yx} &amp; U_{yy} \end{vmatrix} - (-p_x) \cdot \begin{vmatrix} -p_x &amp; U_{xy} \\\\
+-p_y &amp; U_{yy} \end{vmatrix} + (-p_y) \cdot \begin{vmatrix} -p_x &amp; U_{xx} \\ -p_y &amp; U_{yx} \end{vmatrix}\\\\
+&amp;= p_x(-p_x U_{yy} + p_y U_{xy}) - p_y(-p_x U_{yx} + p_y U_{xx})\\\\
+&amp;= -p_x^2 U_{yy} + p_x p_y U_{xy} + p_x p_y U_{yx} - p_y^2 U_{xx}
+\end{aligned}
+\]</div>
+<p>利用 Young's theorem (<span class="arithmatex">\(U_{xy} = U_{yx}\)</span>) ，得到：</p>
+<div class="arithmatex">\[
+\det(\bar{H}) = -p_x^2 U_{yy} - p_y^2 U_{xx} + 2p_x p_y U_{xy}
+\]</div>
+<p>因此，二階條件要求：</p>
+<div class="arithmatex">\[
+-p_x^2 U_{yy} - p_y^2 U_{xx} + 2p_x p_y U_{xy} &lt; 0
+\]</div>
+<p>重新整理可得更直觀的形式為：</p>
+<div class="arithmatex">\[
+p_x^2 U_{yy} + p_y^2 U_{xx} - 2p_x p_y U_{xy} &gt; 0
+\]</div>
+<h4 id="_7">二階條件的經濟意義</h4>
+<p>注意到上述不等式可以寫成：
+$$
+\begin{bmatrix} p_x &amp; p_y \end{bmatrix} \begin{bmatrix} U_{xx} &amp; U_{xy} \\ U_{yx} &amp; U_{yy} \end{bmatrix} \begin{bmatrix} p_x \\ p_y \end{bmatrix} &gt; 0
+$$
+代表無約束 Hessian 矩陣 
+$$
+H_U = \begin{bmatrix} U_{xx} &amp; U_{xy} \\ U_{yx} &amp; U_{yy} \end{bmatrix}
+$$
+在價格向量 <span class="arithmatex">\((p_x, p_y)\)</span> 方向上必為<strong>正定</strong> (positive definite)。從經濟角度來看，此條件確保了以下幾點非常重要的性質：</p>
+<ol>
+<li>
+<p><strong>無差異曲線的凸性</strong>：確保無差異曲線向原點凸出，這與邊際替代率遞減的假設一致</p>
+</li>
+<li>
+<p><strong>效用函數的凹性限制</strong>：雖然不要求效用函數全域凹 (globally concave)，但要求其在最適點附近沿預算約束方向具有適當的曲率</p>
+</li>
+<li>
+<p><strong>穩定性條件</strong>：保證小幅價格變動不會導致最適點發生劇烈跳躍</p>
+</li>
+</ol>
+<h4 id="_8">檢驗二階條件的實際步驟</h4>
+<ol>
+<li>
+<p><strong>計算效用函數的二階偏微分</strong>：<span class="arithmatex">\(U_{xx}\)</span>、<span class="arithmatex">\(U_{yy}\)</span>、<span class="arithmatex">\(U_{xy} = U_{yx}\)</span></p>
+</li>
+<li>
+<p><strong>將最適解代入</strong>：將從一階條件求得的 <span class="arithmatex">\((x^*, y^*)\)</span> 代入上述二階偏微分</p>
+</li>
+<li>
+<p><strong>計算判別式</strong>：計算 <span class="arithmatex">\(p_x^2 U_{yy} + p_y^2 U_{xx} - 2p_x p_y U_{xy}\)</span> 的值</p>
+</li>
+<li>
+<p><strong>檢查符號</strong>：若結果大於零，則二階條件滿足；若小於等於零，則需要進一步分析</p>
+</li>
+</ol>
+<h4 id="_9">二階條件失效的情況</h4>
+<p>當二階條件不滿足時，可能出現以下情況：</p>
+<ul>
+<li><strong>鞍點</strong>：駐點既不是最大值也不是最小值</li>
+<li><strong>邊界解</strong>：真正的最大值可能出現在可行集合的邊界上</li>
+<li><strong>多重均衡</strong>：存在多個局部最大值</li>
+</ul>
+<p>在這些情況下，需要採用其他方法 (如比較各候選點的目標函數值) 來確定真正的最適解。</p>
+<h3 id="_10">拉格朗日乘數的經濟意義</h3>
+<p>拉格朗日乘數 <span class="arithmatex">\(\lambda\)</span> 的經濟意義如下：</p>
+<ul>
+<li><strong>邊際效用價值</strong>：<span class="arithmatex">\(\lambda = \frac{MU_x}{p_x} = \frac{MU_y}{p_y}\)</span> 表示額外一單位所得的邊際效用</li>
+<li><strong>影子價格</strong>：反映預算限制的緊峭程度</li>
+<li><strong>效用函數的量綱</strong>：當效用函數乘以常數 <span class="arithmatex">\(k\)</span> 時，<span class="arithmatex">\(\lambda\)</span> 也會乘以 <span class="arithmatex">\(k\)</span></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">影子價格</p>
+<p><strong>影子價格</strong> (shadow price) 反映了放寬預算約束對消費者福利的邊際改善。</p>
+<div class="arithmatex">\[
+\frac{\partial U^*}{\partial M} = \lambda
+\]</div>
+<p>其中 <span class="arithmatex">\(U^*\)</span> 是最適化問題的最大效用值。這意味著如果消費者的所得增加一個微小單位，其最大可達成的效用水準將增加 <span class="arithmatex">\(\lambda\)</span> 單位。從政策分析角度來看，<span class="arithmatex">\(\lambda\)</span> 的大小反映了預算約束的「緊峭程度」：</p>
+<ul>
+<li><strong><span class="arithmatex">\(\lambda\)</span> 值較大</strong>：表示額外的一元錢對消費者來說價值很高，預算約束較緊</li>
+<li><strong><span class="arithmatex">\(\lambda\)</span> 值較小</strong>：表示額外的一元錢對消費者的改善有限，預算約束相對寬鬆</li>
+</ul>
+</div>
+<p>拉格朗日乘數 <span class="arithmatex">\(\lambda\)</span> 其實不只是數學解題時的技巧，在經濟學裡它有更貼近直覺的用法。它告訴我們，在資源有限的情況下，消費者怎麼分配才算「最划算」。同時，它也常被拿來分析福利和政策影響。簡單說，<span class="arithmatex">\(\lambda\)</span> 就像是一個翻譯器，把效用最大化這種很抽象的理論，轉換成我們在市場裡能觀察到的行為，讓理論跟現實之間有了更清楚的連結。</p>
+<div class="admonition example">
+<p class="admonition-title">不同效用函數下的最適選擇</p>
+<p>設消費者面臨預算限制 <span class="arithmatex">\(p_{x}x + p_{y}y = M\)</span>，求以下四種效用函數下的最適消費組合：</p>
+<ol>
+<li>完全替代型效用函數：<span class="arithmatex">\(U(x, y) = ax + by\)</span></li>
+<li>完全互補型效用函數：<span class="arithmatex">\(U(x, y) = \min\{ax, by\}\)</span></li>
+<li>Cobb-Douglas 效用函數：<span class="arithmatex">\(U(x, y) = Ax^{\alpha} y^{\beta}\)</span></li>
+<li>準線性效用函數：<span class="arithmatex">\(U(x, y) = \ln x + y\)</span></li>
+</ol>
+<p><strong>【解】</strong></p>
+<ol>
+<li>
+<p>最適化問題可以表達為以下形式
+$$
+\begin{aligned}
+\max\;&amp; U(x, y) = ax + by\\
+\text{s.t.}\;&amp; p_{x}x + p_{y}y = M
+\end{aligned}
+$$
+完全替代型效用函數的無異曲線為線性形式，因此消費者最適選擇與無異曲線之邊際替代率大小有關。</p>
+<ul>
+<li>若 <span class="arithmatex">\(MRS_{xy} &gt; \frac{p_x}{p_y}\)</span>，則消費者最適組合為 <span class="arithmatex">\((x^{*}, y^{*}) = (\frac{M}{p_{x}}, 0)\)</span></li>
+<li>若 <span class="arithmatex">\(MRS_{xy} &lt; \frac{p_x}{p_y}\)</span>，則消費者最適組合為 <span class="arithmatex">\((x^{*}, y^{*}) = (0, \frac{M}{p_{y}})\)</span></li>
+<li>若 <span class="arithmatex">\(MRS_{xy} = \frac{p_x}{p_y}\)</span>，隱含無異曲線與預算限制式重疊，因此預算限制式上任何一點均可能是消費者的最適選擇，但消費者僅能選擇其中一點，因此表達最適選擇為</li>
+</ul>
+<div class="arithmatex">\[
+\{(x^{*}, y^{*})\} = \{p_{x}x + p_{y}y = M\}
+\]</div>
+</li>
+<li>
+<p>最適化問題可以表達為以下形式：
+    $$
+    \begin{aligned}
+    \max\;&amp; U(x, y) = \min\{ax, by\}\\
+    \text{s.t.}\;&amp; p_{x}x + p_{y}y = M
+    \end{aligned}
+    $$
+    從圖形來看，完全互補型效用函數之消費者最適選擇如圖中 <span class="arithmatex">\(E\)</span> 點所示，位於預算限制式與商品消費固定比例射線上，亦即求解以下聯立：
+    $$
+    \begin{cases}
+    ax = by\\
+    p_{x}x + p_{y}y = M
+    \end{cases}
+    $$
+    由上式得 <span class="arithmatex">\(y = \frac{a}{b}x\)</span>，代入預算限制式，可得
+    $$
+    p_{x}x + p_{y} \cdot \dfrac{a}{b}x = M
+    $$
+    求解後可得 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 兩商品之需求函數為</p>
+<div class="arithmatex">\[
+x^{*} = \dfrac{bM}{bp_{x} + ap_{y}}, \quad y^{*} = \dfrac{aM}{bp_{x} + ap_{y}}
+\]</div>
+</li>
+<li>
+<p>最適化問題可以表達為以下形式：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\max\;&amp; U(x, y) = Ax^{\alpha} y^{\beta}\\\\
+\text{s.t.}\;&amp; p_{x}x + p_{y}y = M
+\end{aligned}
+\]</div>
+<p>由邊際替代率
+$$
+MRS_{xy} = \dfrac{\alpha}{\beta} \cdot \dfrac{y}{x} = \dfrac{p_{x}}{p_{y}}
+$$
+整理後可得：
+$$
+\dfrac{y}{x} = \dfrac{\beta}{\alpha} \cdot \dfrac{p_{x}}{p_{y}} \cdot x
+$$
+代入預算限制式後可得
+$$
+p_{x}x + p_{y} \cdot \left(\dfrac{\beta}{\alpha} \cdot \dfrac{p_{x}}{p_{y}} \cdot x\right) = M
+$$
+求解後可得 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 兩商品之需求函數為</p>
+<div class="arithmatex">\[
+x^{*} = \dfrac{\alpha}{\alpha + \beta} \cdot \dfrac{M}{p_{x}}, \quad y^{*} = \dfrac{\beta}{\alpha + \beta} \cdot \dfrac{M}{p_{y}}
+\]</div>
+</li>
+<li>
+<p>最適化問題可以表達為以下形式：
+    $$
+    \begin{aligned}
+    \max\;&amp; U(x, y) = \ln x + y\\
+    \text{s.t.}\;&amp; p_{x}x + p_{y}y = M
+    \end{aligned}
+    $$
+    由邊際替代率
+    $$
+    MRS_{xy} = \frac{1}{x} = \dfrac{p_{x}}{p_{y}}
+    $$
+    即可立刻求得 <span class="arithmatex">\(x\)</span> 與 <span class="arithmatex">\(y\)</span> 商品的最適需求量為：</p>
+<div class="arithmatex">\[
+x^{*} = \dfrac{p_{y}}{p_{x}}, \quad y^{*} = \dfrac{M}{p_{y}} - 1
+\]</div>
+<p>但必須滿足 <span class="arithmatex">\(\frac{M}{p_{y}} &gt; 1\)</span> 的條件。因此</p>
+<ul>
+<li>若 <span class="arithmatex">\(\frac{M}{p_{y}} &gt; 1\)</span> 成立，則 <span class="arithmatex">\((x^{*}, y^{*}) = (\frac{p_{y}}{p_{x}}, \frac{M}{p_{y}} - 1)\)</span>。</li>
+<li>若 <span class="arithmatex">\(\frac{M}{p_{y}} \leq 1\)</span> 成立，則 <span class="arithmatex">\((x^{*}, y^{*}) = (\frac{M}{p_{x}}, 0)\)</span>。</li>
+</ul>
+</li>
+</ol>
+</div><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body></html>
+      
+      
+      
+        <hr class="hr">
+<div id="comments" class="md-typeset">
+  <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+  <hyvor-talk-comments
+    website-id="13970"
+    page-id="./"
+    page-url="None"
+  ></hyvor-talk-comments>
+</div>
+      
+    </article>
+  </div>
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../budget_constraint/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4.2 &amp;nbsp; 預算限制式">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                4.2 &nbsp; 預算限制式
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce", "announce.dismiss", "navigation.footer", "navigation.indexes", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.tooltips", "content.footnote.tooltips"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+        <script src="../../js/quiz.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
