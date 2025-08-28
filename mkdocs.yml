@@ -32,6 +32,11 @@ nav:
     - 3.2 &nbsp; 限量政策: ch3/quantity_control.md
     - 3.3 &nbsp; 課稅政策: ch3/tax.md
     - 3.4 &nbsp; 補貼政策: ch3/subsidy.md
+  - 第 4 章 &nbsp; 消費者理論: 
+    - ch4/index.md
+    - 4.1 &nbsp; 效用: ch4/utility.md
+    - 4.2 &nbsp; 預算限制式: ch4/budget_constraint.md
+    - 4.3 &nbsp; 消費者最適選擇: ch4/optimal_choice.md
 theme:
   name: material
   custom_dir: overrides
