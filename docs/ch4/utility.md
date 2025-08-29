@@ -170,20 +170,20 @@ $$
 
     且 $MRS_{xy} = -\frac{dY}{dX} = \frac{U_x}{U_y} = \frac{U_x(x,Y(x))}{U_y(x,Y(x))}$。
     若隨著 $x$ 商品消費量增加，$MRS_{xy}$ 會隨之下降，則表示邊際替代率遞減法
-    則成立，以數學表達即為 $\frac{dMRS_{xy}}{dx} < 0$，底下證明此式的成立條件：
+    則成立，以數學表達即為 $\frac{dMRS_{xy}}{dx} < 0$。底下證明成立條件：
     $$
     \begin{aligned}
-    \frac{dMRS_{xy}}{dx} &= \frac{d}{dx}\left(\frac{U_x}{U_y}\right) = \frac{1}{U_y^2}\left[U_{xx} + U_{xy}\left(\frac{dY}{dX}\right)\right] \cdot U_y - \left[U_{yx} + U_{yy}\left(\frac{dY}{dX}\right)\right] \cdot U_x\\\\
-    &= \frac{1}{U_y^2}\left[U_{xx} + U_{xy}\left(-\frac{U_x}{U_y}\right)\right] \cdot U_y - \left[U_{yx} + U_{yy}\left(-\frac{U_x}{U_y}\right)\right] \cdot U_x\\\\
-    &= \frac{1}{U_y^2}\left\{U_{xx} \cdot U_y - U_{xy} \cdot U_x - U_{yx} \cdot U_x + U_{yy} \cdot \frac{U_x^2}{U_y}\right\}\\\\
-    &= \frac{1}{U_y^3}\left\{U_{xx} \cdot U_y^2 - 2 \cdot U_{xy} \cdot U_x \cdot U_y + U_{yy} \cdot U_x^2\right\}
+        \dfrac{dMRS_{xy}}{dx} &= \dfrac{d}{dx}\left(\dfrac{U_{x}}{U_{y}}\right) = \dfrac{1}{U_{y}^{2}}\left[U_{xx} + U_{xy}\left(\dfrac{dy}{dx}\right)\right] \cdot U_{y} - \left[U_{yx} + U_{yy}\left(-\dfrac{dy}{dx}\right)\right] \cdot U_{x}\\\\
+        &= \dfrac{1}{U_{y}^{2}}\left[U_{xx} + U_{xy}\left(-\frac{U_x}{U_y}\right)\right] \cdot U_y - \left[U_{yx} + U_{yy}\left(-\frac{U_x}{U_y}\right)\right] \cdot U_x\\\\
+        &= \dfrac{1}{U_y^2} \left(U_{xx} \cdot U_y - U_{xy} \cdot U_x - U_{yx} \cdot U_x + U_{yy} \cdot \frac{U_x^2}{U_y}\right)\\\\
+        &= \dfrac{1}{U_y^3}\left(U_{xx} \cdot U_y^2 - 2 \cdot U_{xy} \cdot U_x \cdot U_y + U_{yy} \cdot U_x^2\right)
     \end{aligned}
     $$
 
     利用 Young's theorem 得知 $U_{xy} = U_{yx}$，故上式可改為
 
     $$
-    = \frac{1}{U_y^3}\left\{U_{xx} \cdot U_y^2 - 2 \cdot U_{xy} \cdot U_x \cdot U_y + U_{yy} \cdot U_x^2\right\} < 0
+    = \frac{1}{U_y^3}\left(U_{xx} \cdot U_y^2 - 2 \cdot U_{xy} \cdot U_x \cdot U_y + U_{yy} \cdot U_x^2\right) < 0
     $$
 
     上式中 $U_y^3 > 0$，所以 $\frac{dMRS_{xy}}{dx} < 0$ 隱含 $U_{xx} \cdot U_y^2 - 2 \cdot U_{xy} \cdot U_x \cdot U_y + U_{yy} \cdot U_x^2 < 0$
@@ -567,6 +567,8 @@ $$
 $$
 MRS_{xy} = \dfrac{\alpha}{\beta} \cdot \dfrac{y - y_{0}}{x - x_{0}}
 $$
+
+Stone-Geary 效用函數之圖形如下所示：
 
 ![Stone-Geary效用函數](images/Stone-Geary 效用函數.png){ width="350" }
 

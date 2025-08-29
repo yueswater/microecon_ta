@@ -1,11 +1,11 @@
 # 供需模型應用
 
 <figure class="chapter-hero">
-  <img src="../assets/images/ch2-cover.png" alt="民眾至大賣場瘋搶衛生紙" loading="lazy">
-  <figcaption>
+  <img src="../assets/images/ch3-cover.png" alt="手寫式三聯發票" loading="lazy">
+  <figcaption style="font-size: 12px;">
     圖片來源：
-    <a href="https://www.cw.com.tw/article/5099427" target="_blank" rel="noopener">
-      天下雜誌 | 衛生紙之亂蔓延全球：又不能防疫，為什麼各國民眾都搶購衛生紙？
+    <a href="https://invoice.tw/news/?p=337" target="_blank" rel="noopener">
+      發票存摺 | 細說統一發票-關於發票對獎、發票種類、發票用途與管理
     </a>
   </figcaption>
 </figure>
