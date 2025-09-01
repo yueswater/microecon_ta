@@ -1,5 +1,6 @@
 site_name: 個體經濟學
 site_dir: site
+site_url: https://ta.yueswater.com
 repo_url: https://github.com/yueswater/microecon_ta
 repo_name: yueswater/microecon_ta
 
@@ -91,7 +92,6 @@ extra_javascript:
   - js/quiz.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
-  - styles.css
   - stylesheets/extra.css
 markdown_extensions:
   - footnotes
