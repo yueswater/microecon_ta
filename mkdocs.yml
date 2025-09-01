@@ -38,6 +38,8 @@ nav:
     - 4.1 &nbsp; 效用: ch4/utility.md
     - 4.2 &nbsp; 預算限制式: ch4/budget_constraint.md
     - 4.3 &nbsp; 消費者最適選擇: ch4/optimal_choice.md
+    - 4.4 &nbsp; 分解價格效果: ch4/price_effect.md
+    - 4.5 &nbsp; 消費者福利分析: ch4/welfare_analysis.md
 theme:
   name: material
   custom_dir: overrides

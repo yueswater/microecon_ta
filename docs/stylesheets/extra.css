@@ -120,6 +120,16 @@ form.quiz label {
   text-decoration-color: #349890 !important;
 }
 
+.md-typeset a.custom-link {
+  color: #349890 !important;
+  text-decoration: none !important;
+}
+
+.md-typeset a.custom-link:hover,
+.md-typeset a.custom-link:visited,
+.md-typeset a.custom-link:active {
+  color: #349890 !important;
+}
 
 form.booking {
   background: var(--md-default-bg-color);
